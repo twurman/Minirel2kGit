@@ -22,20 +22,20 @@ SELECT * FROM stars;
 --
 -- test Insert with indices
 --
-CREATE INDEX soaps (soapid);
-CREATE INDEX soaps (network);
-CREATE INDEX soaps (rating);
+-- CREATE INDEX soaps (soapid);
+-- CREATE INDEX soaps (network);
+-- CREATE INDEX soaps (rating);
 
-INSERT INTO soaps (soapid, name, network, rating) 
-	VALUES (100, 'Dallas', 'CBS', 8.67);
+-- INSERT INTO soaps (soapid, name, network, rating)
+--	VALUES (100, 'Dallas', 'CBS', 8.67);
 
 -- insert with attributes out of order:
-INSERT INTO soaps (network, rating, name, soapid)
-	VALUES ('ABC', 3.35, 'Loving', 101);
+-- INSERT INTO soaps (network, rating, name, soapid)
+--	VALUES ('ABC', 3.35, 'Loving', 101);
 
 -- run a few select queries
-SELECT soaps.network, soaps.rating FROM soaps WHERE soaps.soapid = 101;
-SELECT stars.soapid, stars.real_name FROM stars;
+-- SELECT soaps.network, soaps.rating FROM soaps WHERE soaps.soapid = 101;
+-- SELECT stars.soapid, stars.real_name FROM stars;
 
 DROP TABLE soaps;
 DROP TABLE stars;
