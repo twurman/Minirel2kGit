@@ -1,0 +1,478 @@
+TMinirel2K
+v6
+r1
+cCheck dependencies
+cCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/minirel.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/minirel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/heapfile.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbcreateEC.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbcreateEC.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/index.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/error.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/smj.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/smj.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/page.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/join.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/join.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/snl.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/snl.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000052AE9865000000000000044C
+t1387173989
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005339973D00000000000001DE
+t1396283197
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000533997400000000000000ADC
+t1396283200
+s2780
+
+N/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbcreateEC.o
+t2
+s0
+
+N/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/error.o
+t2
+s0
+
+N/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/heapfile.o
+t2
+s0
+
+N/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/index.o
+t2
+s0
+
+N/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/indexselect.o
+t2
+s0
+
+N/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/join.o
+t2
+s0
+
+N/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/minirel.o
+t2
+s0
+
+N/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/page.o
+t2
+s0
+
+N/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/smj.o
+t2
+s0
+
+N/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/snl.o
+t2
+s0
+
+N/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbcreateEC.cpp
+c00000000532DD5290000000000001074
+t1395512617
+s4212
+
+N/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.cpp
+c00000000532DD5730000000000001081
+t1395512691
+s4225
+
+N/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp
+c00000000532DD4BF0000000000003F6D
+t1395512511
+s16237
+
+N/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp
+c00000000532DD4BF00000000000035DE
+t1395512511
+s13790
+
+N/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/indexselect.cpp
+c0000000051530C5A0000000000000337
+t1364397146
+s823
+
+N/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/join.cpp
+c0000000051530CCA0000000000000971
+t1364397258
+s2417
+
+N/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/minirel.cpp
+c00000000532DD529000000000000069E
+t1395512617
+s1694
+
+N/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp
+c000000005339EA9E00000000000009A9
+t1396304542
+s2473
+
+N/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/smj.cpp
+c0000000051530C5C0000000000000398
+t1364397148
+s920
+
+N/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/snl.cpp
+c0000000051530C5C000000000000032C
+t1364397148
+s812
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbcreate.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbcreateEC.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbdestroy.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbdestroyEC.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/indexselect.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/inl.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/insert.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/join.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/main.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/minirel.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/minirelEC.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/print.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/scanselect.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/select.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/smj.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/snl.cpp
+r0
+
+CBuild AST from /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/sort.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd09c9163aaf7b841^b647a363aaf7b841^-140"warning: no rule to process file '/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/Makefile' of type sourcecode.make for architecture x86_641(21%IDEActivityLogMessage2@139"Warning: no rule to process file '/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/Makefile' of type sourcecode.make for architecture x86_64-418884195#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#1#--18"Check dependencies36"636C476D-6B94-46A7-AB4C-E7BE119CE8D6-
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbcreate.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbcreate.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbcreateEC.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbcreateEC.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s418884195.640805
+e418884197.055350
+r1
+xCompileC
+xDerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbcreateEC.o
+x/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbcreateEC.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbcreateEC.cpp
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/catalog.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/datatypes.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/buf.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/db.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/bufMap.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbcreateEC.cpp210"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbcreateEC.o Minirel2K/dbcreateEC.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler0168a463aaf7b841^5a2b0e65aaf7b841^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbcreateEC.cpp0000000000000000^3252"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbcreateEC.o Minirel2K/dbcreateEC.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/twurman/EECS484/prj4/Minirel2K    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-generated-files.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-own-target-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-all-target-headers.hmap -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-project-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources/x86_64 -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources -F/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug -MMD -MT dependencies -MF /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbcreateEC.d --serialize-diagnostics /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbcreateEC.dia -c /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbcreateEC.cpp -o /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbcreateEC.o36"8DF02637-D238-4C45-A349-249C0D7F2DBA-
+bE0A3EF04-2C39-463D-8A69-E8857D59BEBA
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbdestroy.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbdestroy.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/dbdestroyEC.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/dbdestroyEC.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/error.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s418884197.056853
+e418884198.056343
+r1
+xCompileC
+xDerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/error.o
+x/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.cpp
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.cpp200"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/error.o Minirel2K/error.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler20b40e65aaf7b841^c68a0e66aaf7b841^---0#0#1#-19%DVTDocumentLocation2@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.cpp0000000000000000^3222"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/error.o Minirel2K/error.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/twurman/EECS484/prj4/Minirel2K    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-generated-files.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-own-target-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-all-target-headers.hmap -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-project-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources/x86_64 -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources -F/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug -MMD -MT dependencies -MF /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/error.d --serialize-diagnostics /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/error.dia -c /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.cpp -o /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/error.o36"A5DAD8C6-D8C4-4DCF-9962-BCE745821517-
+bE0A3EF04-2C39-463D-8A69-E8857D59BEBA
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/heapfile.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s418884195.640689
+e418884197.056956
+r1
+xCompileC
+xDerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/heapfile.o
+x/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/buf.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/db.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/bufMap.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/datatypes.h
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp:321:25: warning: '&&' within '||' [-Wlogical-op-parentheses]
+o      (type_ == INTEGER && length_ != sizeof(int)
+o       ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp:321:25: note: place parentheses around the '&&' expression to silence this warning
+o      (type_ == INTEGER && length_ != sizeof(int)
+o                        ^
+o       (                                         )
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp:322:27: warning: '&&' within '||' [-Wlogical-op-parentheses]
+o       || type_ == DOUBLE && length_ != sizeof(double)) ||
+o       ~~ ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp:322:27: note: place parentheses around the '&&' expression to silence this warning
+o       || type_ == DOUBLE && length_ != sizeof(double)) ||
+o                          ^
+o          (                                           )
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp206"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/heapfile.o Minirel2K/heapfile.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compileree41a463aaf7b841^d1930e65aaf7b841^-1038"/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp:321:25: warning: '&&' within '||' [-Wlogical-op-parentheses]      (type_ == INTEGER && length_ != sizeof(int)       ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp:321:25: note: place parentheses around the '&&' expression to silence this warning      (type_ == INTEGER && length_ != sizeof(int)                        ^       (                                         )/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp:322:27: warning: '&&' within '||' [-Wlogical-op-parentheses]       || type_ == DOUBLE && length_ != sizeof(double)) ||       ~~ ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp:322:27: note: place parentheses around the '&&' expression to silence this warning       || type_ == DOUBLE && length_ != sizeof(double)) ||                          ^          (                                           )2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@16"'&&' within '||'-418884197#18446744073709551615#0#1(2@68"Place parentheses around the '&&' expression to silence this warning-418884197#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^320#24#320#24#8514#0#14"Semantic Issue2(3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^320#7#320#7#8497#0#3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^320#49#320#49#8539#0#-1#27"com.apple.dt.IDE.diagnostic3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^320#24#320#24#8514#0#14"Semantic Issue2(3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^320#7#320#49#8497#41#3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^321#7#321#9#8547#0#-2@16"'&&' within '||'-418884197#18446744073709551615#0#1(2@68"Place parentheses around the '&&' expression to silence this warning-418884197#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^321#26#321#26#8566#0#14"Semantic Issue2(3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^321#10#321#10#8550#0#3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^321#54#321#54#8594#0#-1#27"com.apple.dt.IDE.diagnostic3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^321#26#321#26#8566#0#14"Semantic Issue2(3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^321#10#321#54#8550#43#3@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^321#7#321#9#8547#0#-0#0#1#-19%DVTDocumentLocation4@76"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp0000000000000000^3240"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/heapfile.o Minirel2K/heapfile.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/twurman/EECS484/prj4/Minirel2K    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-generated-files.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-own-target-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-all-target-headers.hmap -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-project-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources/x86_64 -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources -F/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug -MMD -MT dependencies -MF /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/heapfile.d --serialize-diagnostics /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/heapfile.dia -c /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.cpp -o /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/heapfile.o36"A30927A4-13C5-4456-AF2C-313ABB7E2B9B-
+bE0A3EF04-2C39-463D-8A69-E8857D59BEBA
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/index.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s418884195.642203
+e418884197.101889
+r1
+xCompileC
+xDerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/index.o
+x/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/buf.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/db.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/bufMap.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/datatypes.h
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp:46:23: warning: '&&' within '||' [-Wlogical-op-parentheses]
+o  if (type == INTEGER && length != sizeof(int)
+o      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp:46:23: note: place parentheses around the '&&' expression to silence this warning
+o  if (type == INTEGER && length != sizeof(int)
+o                      ^
+o      (                                       )
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp:47:25: warning: '&&' within '||' [-Wlogical-op-parentheses]
+o      || type == DOUBLE && length != sizeof(double)) {
+o      ~~ ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp:47:25: note: place parentheses around the '&&' expression to silence this warning
+o      || type == DOUBLE && length != sizeof(double)) {
+o                        ^
+o         (                                         )
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp200"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/index.o Minirel2K/index.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler4487a463aaf7b841^50391a65aaf7b841^-992"/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp:46:23: warning: '&&' within '||' [-Wlogical-op-parentheses]  if (type == INTEGER && length != sizeof(int)      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp:46:23: note: place parentheses around the '&&' expression to silence this warning  if (type == INTEGER && length != sizeof(int)                      ^      (                                       )/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp:47:25: warning: '&&' within '||' [-Wlogical-op-parentheses]      || type == DOUBLE && length != sizeof(double)) {      ~~ ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp:47:25: note: place parentheses around the '&&' expression to silence this warning      || type == DOUBLE && length != sizeof(double)) {                        ^         (                                         )2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@16"'&&' within '||'-418884197#18446744073709551615#0#1(2@68"Place parentheses around the '&&' expression to silence this warning-418884197#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^45#22#45#22#989#0#14"Semantic Issue2(3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^45#6#45#6#973#0#3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^45#46#45#46#1013#0#-1#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^45#22#45#22#989#0#14"Semantic Issue2(3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^45#6#45#46#973#39#3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^46#6#46#8#1020#0#-2@16"'&&' within '||'-418884197#18446744073709551615#0#1(2@68"Place parentheses around the '&&' expression to silence this warning-418884197#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^46#24#46#24#1038#0#14"Semantic Issue2(3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^46#9#46#9#1023#0#3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^46#51#46#51#1065#0#-1#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^46#24#46#24#1038#0#14"Semantic Issue2(3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^46#9#46#51#1023#41#3@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^46#6#46#8#1020#0#-0#0#1#-19%DVTDocumentLocation4@73"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp0000000000000000^3222"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/index.o Minirel2K/index.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/twurman/EECS484/prj4/Minirel2K    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-generated-files.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-own-target-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-all-target-headers.hmap -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-project-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources/x86_64 -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources -F/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug -MMD -MT dependencies -MF /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/index.d --serialize-diagnostics /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/index.dia -c /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.cpp -o /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/index.o36"10405934-4CF8-4D99-BD42-E55F92CA7FCD-
+bE0A3EF04-2C39-463D-8A69-E8857D59BEBA
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/indexselect.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/indexselect.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/inl.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/inl.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/insert.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/insert.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/join.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/join.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s418884197.103415
+e418884198.261699
+r1
+xCompileC
+xDerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/join.o
+x/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/join.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/join.cpp
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/catalog.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/datatypes.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/buf.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/db.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/bufMap.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/query.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/sort.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/join.cpp198"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/join.o Minirel2K/join.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerbe9f1a65aaf7b841^c7664366aaf7b841^---0#0#1#-19%DVTDocumentLocation2@72"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/join.cpp0000000000000000^3216"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/join.o Minirel2K/join.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/twurman/EECS484/prj4/Minirel2K    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-generated-files.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-own-target-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-all-target-headers.hmap -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-project-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources/x86_64 -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources -F/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug -MMD -MT dependencies -MF /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/join.d --serialize-diagnostics /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/join.dia -c /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/join.cpp -o /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/join.o36"3E48DDF5-5203-42E5-AEA2-DBE0E4248E35-
+bE0A3EF04-2C39-463D-8A69-E8857D59BEBA
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/main.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/minirel.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/minirel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s418884195.640689
+e418884197.055719
+r1
+xCompileC
+xDerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/minirel.o
+x/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/minirel.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/minirel.cpp
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/catalog.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/datatypes.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/buf.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/db.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/bufMap.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/query.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/minirel.cpp204"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/minirel.o Minirel2K/minirel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerc93aa463aaf7b841^465e0e65aaf7b841^---0#0#1#-19%DVTDocumentLocation2@75"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/minirel.cpp0000000000000000^3234"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/minirel.o Minirel2K/minirel.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/twurman/EECS484/prj4/Minirel2K    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-generated-files.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-own-target-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-all-target-headers.hmap -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-project-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources/x86_64 -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources -F/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug -MMD -MT dependencies -MF /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/minirel.d --serialize-diagnostics /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/minirel.dia -c /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/minirel.cpp -o /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/minirel.o36"BE14A2E6-4290-429A-B992-8805C089E290-
+bE0A3EF04-2C39-463D-8A69-E8857D59BEBA
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/minirelEC.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/minirelEC.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/page.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s418884197.058390
+e418884198.059491
+r0
+xCompileC
+xDerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/page.o
+x/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.h
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:52:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]
+o}
+o^
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:64:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]
+o}
+o^
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:75:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]
+o}
+o^
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:82:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]
+o}
+o^
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:89:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]
+o}
+o^
+o/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:96:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]
+o}
+o^
+o6 errors generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp198"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/page.o Minirel2K/page.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerec140f65aaf7b841^62300f66aaf7b841^-854"/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:52:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]}^/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:64:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]}^/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:75:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]}^/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:82:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]}^/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:89:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]}^/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp:96:1: error: control reaches end of non-void function [-Werror,-Wreturn-type]}^6 errors generated.6(36%IDEClangDiagnosticActivityLogMessage2@40"Control reaches end of non-void function-418884198#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@72"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp0000000000000000^51#0#51#0#1049#0#14"Semantic Issue--2@40"Control reaches end of non-void function-418884198#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@72"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp0000000000000000^63#0#63#0#1487#0#14"Semantic Issue--2@40"Control reaches end of non-void function-418884198#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@72"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp0000000000000000^74#0#74#0#1875#0#14"Semantic Issue--2@40"Control reaches end of non-void function-418884198#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@72"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp0000000000000000^81#0#81#0#2057#0#14"Semantic Issue--2@40"Control reaches end of non-void function-418884198#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@72"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp0000000000000000^88#0#88#0#2270#0#14"Semantic Issue--2@40"Control reaches end of non-void function-418884198#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@72"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp0000000000000000^95#0#95#0#2471#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@72"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp0000000000000000^3216"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/page.o Minirel2K/page.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/twurman/EECS484/prj4/Minirel2K    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-generated-files.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-own-target-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-all-target-headers.hmap -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-project-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources/x86_64 -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources -F/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug -MMD -MT dependencies -MF /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/page.d --serialize-diagnostics /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/page.dia -c /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.cpp -o /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/page.o36"7A8ECDAA-D477-4E25-994F-6A176DD15E94-
+bE0A3EF04-2C39-463D-8A69-E8857D59BEBA
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/print.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/print.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/scanselect.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/scanselect.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/select.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/select.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/smj.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/smj.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s418884197.057538
+e418884198.261703
+r1
+xCompileC
+xDerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/smj.o
+x/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/smj.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/smj.cpp
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/catalog.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/datatypes.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/buf.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/db.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/bufMap.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/query.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/sort.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/smj.cpp196"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/smj.o Minirel2K/smj.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler9cdd0e65aaf7b841^8b6c4366aaf7b841^---0#0#1#-19%DVTDocumentLocation2@71"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/smj.cpp0000000000000000^3210"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/smj.o Minirel2K/smj.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/twurman/EECS484/prj4/Minirel2K    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-generated-files.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-own-target-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-all-target-headers.hmap -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-project-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources/x86_64 -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources -F/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug -MMD -MT dependencies -MF /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/smj.d --serialize-diagnostics /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/smj.dia -c /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/smj.cpp -o /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/smj.o36"45929952-D2DA-4625-910D-D3702FEFD340-
+bE0A3EF04-2C39-463D-8A69-E8857D59BEBA
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/snl.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/snl.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s418884198.057788
+e418884198.768615
+r1
+xCompileC
+xDerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/snl.o
+x/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/snl.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/snl.cpp
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/catalog.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/datatypes.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/heapfile.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/buf.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/db.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/error.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/bufMap.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/page.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/query.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/index.h
+d/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/sort.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/snl.cpp196"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/snl.o Minirel2K/snl.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler45f10e66aaf7b841^11c5c466aaf7b841^---0#0#1#-19%DVTDocumentLocation2@71"file://localhost/Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/snl.cpp0000000000000000^3210"CompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/snl.o Minirel2K/snl.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/twurman/EECS484/prj4/Minirel2K    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-generated-files.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-own-target-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-all-target-headers.hmap -iquote /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Minirel2K-project-headers.hmap -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources/x86_64 -I/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/DerivedSources -F/Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug -MMD -MT dependencies -MF /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/snl.d --serialize-diagnostics /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/snl.dia -c /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/snl.cpp -o /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/snl.o36"BB2130E7-C36C-4DE6-B540-78E46A8610FB-
+bE0A3EF04-2C39-463D-8A69-E8857D59BEBA
+
+CCompileC DerivedData/Minirel2K/Build/Intermediates/Minirel2K.build/Debug/Minirel2K.build/Objects-normal/x86_64/sort.o /Users/twurman/EECS484/prj4/Minirel2K/Minirel2K/sort.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CLd /Users/twurman/EECS484/prj4/Minirel2K/DerivedData/Minirel2K/Build/Products/Debug/Minirel2K normal x86_64
+r0
+

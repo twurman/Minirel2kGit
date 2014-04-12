@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A487AF118F7A9E700B6B722 /* Minirel2K.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A487AF018F7A9E700B6B722 /* Minirel2K.1 */; };
+		8A487B2418F7AA3D00B6B722 /* dbcreate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487AFC18F7AA3D00B6B722 /* dbcreate.cpp */; };
+		8A487B2518F7AA3D00B6B722 /* dbcreateEC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487AFD18F7AA3D00B6B722 /* dbcreateEC.cpp */; };
+		8A487B2618F7AA3D00B6B722 /* dbdestroy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487AFE18F7AA3D00B6B722 /* dbdestroy.cpp */; };
+		8A487B2718F7AA3D00B6B722 /* dbdestroyEC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487AFF18F7AA3D00B6B722 /* dbdestroyEC.cpp */; };
+		8A487B2818F7AA3D00B6B722 /* error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B0018F7AA3D00B6B722 /* error.cpp */; };
+		8A487B2918F7AA3D00B6B722 /* heapfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B0218F7AA3D00B6B722 /* heapfile.cpp */; };
+		8A487B2A18F7AA3D00B6B722 /* index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B0418F7AA3D00B6B722 /* index.cpp */; };
+		8A487B2B18F7AA3D00B6B722 /* indexselect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B0618F7AA3D00B6B722 /* indexselect.cpp */; };
+		8A487B2C18F7AA3D00B6B722 /* inl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B0718F7AA3D00B6B722 /* inl.cpp */; };
+		8A487B2D18F7AA3D00B6B722 /* insert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B0818F7AA3D00B6B722 /* insert.cpp */; };
+		8A487B2E18F7AA3D00B6B722 /* join.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B0918F7AA3D00B6B722 /* join.cpp */; };
+		8A487B2F18F7AA3D00B6B722 /* libcat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A487B0A18F7AA3D00B6B722 /* libcat.a */; };
+		8A487B3018F7AA3D00B6B722 /* libEC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A487B0B18F7AA3D00B6B722 /* libEC.a */; };
+		8A487B3118F7AA3D00B6B722 /* liblsm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A487B0C18F7AA3D00B6B722 /* liblsm.a */; };
+		8A487B3218F7AA3D00B6B722 /* libmisc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A487B0D18F7AA3D00B6B722 /* libmisc.a */; };
+		8A487B3318F7AA3D00B6B722 /* libsql.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A487B0E18F7AA3D00B6B722 /* libsql.a */; };
+		8A487B3418F7AA3D00B6B722 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B0F18F7AA3D00B6B722 /* Makefile */; };
+		8A487B3518F7AA3D00B6B722 /* minirel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B1018F7AA3D00B6B722 /* minirel.cpp */; };
+		8A487B3618F7AA3D00B6B722 /* minirelEC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B1118F7AA3D00B6B722 /* minirelEC.cpp */; };
+		8A487B3718F7AA3D00B6B722 /* page.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B1218F7AA3D00B6B722 /* page.cpp */; };
+		8A487B3818F7AA3D00B6B722 /* print.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B1418F7AA3D00B6B722 /* print.cpp */; };
+		8A487B3918F7AA3D00B6B722 /* scanselect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B1618F7AA3D00B6B722 /* scanselect.cpp */; };
+		8A487B3A18F7AA3D00B6B722 /* select.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B1718F7AA3D00B6B722 /* select.cpp */; };
+		8A487B3B18F7AA3D00B6B722 /* smj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B1818F7AA3D00B6B722 /* smj.cpp */; };
+		8A487B3C18F7AA3D00B6B722 /* snl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B1918F7AA3D00B6B722 /* snl.cpp */; };
+		8A487B3D18F7AA3D00B6B722 /* sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A487B1A18F7AA3D00B6B722 /* sort.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A487AE918F7A9E700B6B722 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8A487AF118F7A9E700B6B722 /* Minirel2K.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A487AEB18F7A9E700B6B722 /* Minirel2K */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Minirel2K; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A487AF018F7A9E700B6B722 /* Minirel2K.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Minirel2K.1; sourceTree = "<group>"; };
+		8A487AF718F7AA3D00B6B722 /* buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buf.h; sourceTree = "<group>"; };
+		8A487AF818F7AA3D00B6B722 /* bufMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bufMap.h; sourceTree = "<group>"; };
+		8A487AF918F7AA3D00B6B722 /* catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalog.h; sourceTree = "<group>"; };
+		8A487AFA18F7AA3D00B6B722 /* datatypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = datatypes.h; sourceTree = "<group>"; };
+		8A487AFB18F7AA3D00B6B722 /* db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = db.h; sourceTree = "<group>"; };
+		8A487AFC18F7AA3D00B6B722 /* dbcreate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dbcreate.cpp; sourceTree = "<group>"; };
+		8A487AFD18F7AA3D00B6B722 /* dbcreateEC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dbcreateEC.cpp; sourceTree = "<group>"; };
+		8A487AFE18F7AA3D00B6B722 /* dbdestroy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dbdestroy.cpp; sourceTree = "<group>"; };
+		8A487AFF18F7AA3D00B6B722 /* dbdestroyEC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dbdestroyEC.cpp; sourceTree = "<group>"; };
+		8A487B0018F7AA3D00B6B722 /* error.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = error.cpp; sourceTree = "<group>"; };
+		8A487B0118F7AA3D00B6B722 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		8A487B0218F7AA3D00B6B722 /* heapfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = heapfile.cpp; sourceTree = "<group>"; };
+		8A487B0318F7AA3D00B6B722 /* heapfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heapfile.h; sourceTree = "<group>"; };
+		8A487B0418F7AA3D00B6B722 /* index.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = index.cpp; sourceTree = "<group>"; };
+		8A487B0518F7AA3D00B6B722 /* index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = index.h; sourceTree = "<group>"; };
+		8A487B0618F7AA3D00B6B722 /* indexselect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = indexselect.cpp; sourceTree = "<group>"; };
+		8A487B0718F7AA3D00B6B722 /* inl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inl.cpp; sourceTree = "<group>"; };
+		8A487B0818F7AA3D00B6B722 /* insert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = insert.cpp; sourceTree = "<group>"; };
+		8A487B0918F7AA3D00B6B722 /* join.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = join.cpp; sourceTree = "<group>"; };
+		8A487B0A18F7AA3D00B6B722 /* libcat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcat.a; sourceTree = "<group>"; };
+		8A487B0B18F7AA3D00B6B722 /* libEC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEC.a; sourceTree = "<group>"; };
+		8A487B0C18F7AA3D00B6B722 /* liblsm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblsm.a; sourceTree = "<group>"; };
+		8A487B0D18F7AA3D00B6B722 /* libmisc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmisc.a; sourceTree = "<group>"; };
+		8A487B0E18F7AA3D00B6B722 /* libsql.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsql.a; sourceTree = "<group>"; };
+		8A487B0F18F7AA3D00B6B722 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		8A487B1018F7AA3D00B6B722 /* minirel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minirel.cpp; sourceTree = "<group>"; };
+		8A487B1118F7AA3D00B6B722 /* minirelEC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minirelEC.cpp; sourceTree = "<group>"; };
+		8A487B1218F7AA3D00B6B722 /* page.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = page.cpp; sourceTree = "<group>"; };
+		8A487B1318F7AA3D00B6B722 /* page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page.h; sourceTree = "<group>"; };
+		8A487B1418F7AA3D00B6B722 /* print.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = print.cpp; sourceTree = "<group>"; };
+		8A487B1518F7AA3D00B6B722 /* query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = query.h; sourceTree = "<group>"; };
+		8A487B1618F7AA3D00B6B722 /* scanselect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scanselect.cpp; sourceTree = "<group>"; };
+		8A487B1718F7AA3D00B6B722 /* select.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = select.cpp; sourceTree = "<group>"; };
+		8A487B1818F7AA3D00B6B722 /* smj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = smj.cpp; sourceTree = "<group>"; };
+		8A487B1918F7AA3D00B6B722 /* snl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snl.cpp; sourceTree = "<group>"; };
+		8A487B1A18F7AA3D00B6B722 /* sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sort.cpp; sourceTree = "<group>"; };
+		8A487B1B18F7AA3D00B6B722 /* sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sort.h; sourceTree = "<group>"; };
+		8A487B1D18F7AA3D00B6B722 /* catalog.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = catalog.sql; sourceTree = "<group>"; };
+		8A487B1E18F7AA3D00B6B722 /* datamation.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datamation.sql; sourceTree = "<group>"; };
+		8A487B1F18F7AA3D00B6B722 /* insert.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = insert.sql; sourceTree = "<group>"; };
+		8A487B2018F7AA3D00B6B722 /* join.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = join.sql; sourceTree = "<group>"; };
+		8A487B2118F7AA3D00B6B722 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		8A487B2218F7AA3D00B6B722 /* select.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = select.sql; sourceTree = "<group>"; };
+		8A487B2318F7AA3D00B6B722 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A487AE818F7A9E700B6B722 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A487B2F18F7AA3D00B6B722 /* libcat.a in Frameworks */,
+				8A487B3118F7AA3D00B6B722 /* liblsm.a in Frameworks */,
+				8A487B3018F7AA3D00B6B722 /* libEC.a in Frameworks */,
+				8A487B3318F7AA3D00B6B722 /* libsql.a in Frameworks */,
+				8A487B3218F7AA3D00B6B722 /* libmisc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A487AE218F7A9E700B6B722 = {
+			isa = PBXGroup;
+			children = (
+				8A487AED18F7A9E700B6B722 /* Minirel2K */,
+				8A487AEC18F7A9E700B6B722 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A487AEC18F7A9E700B6B722 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A487AEB18F7A9E700B6B722 /* Minirel2K */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A487AED18F7A9E700B6B722 /* Minirel2K */ = {
+			isa = PBXGroup;
+			children = (
+				8A487B1518F7AA3D00B6B722 /* query.h */,
+				8A487B0818F7AA3D00B6B722 /* insert.cpp */,
+				8A487B1718F7AA3D00B6B722 /* select.cpp */,
+				8A487B0618F7AA3D00B6B722 /* indexselect.cpp */,
+				8A487B1618F7AA3D00B6B722 /* scanselect.cpp */,
+				8A487B0918F7AA3D00B6B722 /* join.cpp */,
+				8A487B1918F7AA3D00B6B722 /* snl.cpp */,
+				8A487B0718F7AA3D00B6B722 /* inl.cpp */,
+				8A487B1818F7AA3D00B6B722 /* smj.cpp */,
+				8A487AF718F7AA3D00B6B722 /* buf.h */,
+				8A487AF818F7AA3D00B6B722 /* bufMap.h */,
+				8A487AF918F7AA3D00B6B722 /* catalog.h */,
+				8A487AFA18F7AA3D00B6B722 /* datatypes.h */,
+				8A487AFB18F7AA3D00B6B722 /* db.h */,
+				8A487AFC18F7AA3D00B6B722 /* dbcreate.cpp */,
+				8A487AFD18F7AA3D00B6B722 /* dbcreateEC.cpp */,
+				8A487AFE18F7AA3D00B6B722 /* dbdestroy.cpp */,
+				8A487AFF18F7AA3D00B6B722 /* dbdestroyEC.cpp */,
+				8A487B0018F7AA3D00B6B722 /* error.cpp */,
+				8A487B0118F7AA3D00B6B722 /* error.h */,
+				8A487B0218F7AA3D00B6B722 /* heapfile.cpp */,
+				8A487B0318F7AA3D00B6B722 /* heapfile.h */,
+				8A487B0418F7AA3D00B6B722 /* index.cpp */,
+				8A487B0518F7AA3D00B6B722 /* index.h */,
+				8A487B0A18F7AA3D00B6B722 /* libcat.a */,
+				8A487B0B18F7AA3D00B6B722 /* libEC.a */,
+				8A487B0C18F7AA3D00B6B722 /* liblsm.a */,
+				8A487B0D18F7AA3D00B6B722 /* libmisc.a */,
+				8A487B0E18F7AA3D00B6B722 /* libsql.a */,
+				8A487B0F18F7AA3D00B6B722 /* Makefile */,
+				8A487B1018F7AA3D00B6B722 /* minirel.cpp */,
+				8A487B1118F7AA3D00B6B722 /* minirelEC.cpp */,
+				8A487B1218F7AA3D00B6B722 /* page.cpp */,
+				8A487B1318F7AA3D00B6B722 /* page.h */,
+				8A487B1418F7AA3D00B6B722 /* print.cpp */,
+				8A487B1A18F7AA3D00B6B722 /* sort.cpp */,
+				8A487B1B18F7AA3D00B6B722 /* sort.h */,
+				8A487B1C18F7AA3D00B6B722 /* sql */,
+				8A487B2318F7AA3D00B6B722 /* utility.h */,
+				8A487AF018F7A9E700B6B722 /* Minirel2K.1 */,
+			);
+			path = Minirel2K;
+			sourceTree = "<group>";
+		};
+		8A487B1C18F7AA3D00B6B722 /* sql */ = {
+			isa = PBXGroup;
+			children = (
+				8A487B1D18F7AA3D00B6B722 /* catalog.sql */,
+				8A487B1E18F7AA3D00B6B722 /* datamation.sql */,
+				8A487B1F18F7AA3D00B6B722 /* insert.sql */,
+				8A487B2018F7AA3D00B6B722 /* join.sql */,
+				8A487B2118F7AA3D00B6B722 /* README */,
+				8A487B2218F7AA3D00B6B722 /* select.sql */,
+			);
+			path = sql;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A487AEA18F7A9E700B6B722 /* Minirel2K */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A487AF418F7A9E700B6B722 /* Build configuration list for PBXNativeTarget "Minirel2K" */;
+			buildPhases = (
+				8A487AE718F7A9E700B6B722 /* Sources */,
+				8A487AE818F7A9E700B6B722 /* Frameworks */,
+				8A487AE918F7A9E700B6B722 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Minirel2K;
+			productName = Minirel2K;
+			productReference = 8A487AEB18F7A9E700B6B722 /* Minirel2K */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A487AE318F7A9E700B6B722 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = twurman;
+			};
+			buildConfigurationList = 8A487AE618F7A9E700B6B722 /* Build configuration list for PBXProject "Minirel2K" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8A487AE218F7A9E700B6B722;
+			productRefGroup = 8A487AEC18F7A9E700B6B722 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A487AEA18F7A9E700B6B722 /* Minirel2K */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A487AE718F7A9E700B6B722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A487B3518F7AA3D00B6B722 /* minirel.cpp in Sources */,
+				8A487B2918F7AA3D00B6B722 /* heapfile.cpp in Sources */,
+				8A487B2518F7AA3D00B6B722 /* dbcreateEC.cpp in Sources */,
+				8A487B2A18F7AA3D00B6B722 /* index.cpp in Sources */,
+				8A487B2818F7AA3D00B6B722 /* error.cpp in Sources */,
+				8A487B3B18F7AA3D00B6B722 /* smj.cpp in Sources */,
+				8A487B3718F7AA3D00B6B722 /* page.cpp in Sources */,
+				8A487B2E18F7AA3D00B6B722 /* join.cpp in Sources */,
+				8A487B3C18F7AA3D00B6B722 /* snl.cpp in Sources */,
+				8A487B2B18F7AA3D00B6B722 /* indexselect.cpp in Sources */,
+				8A487B3D18F7AA3D00B6B722 /* sort.cpp in Sources */,
+				8A487B2618F7AA3D00B6B722 /* dbdestroy.cpp in Sources */,
+				8A487B2C18F7AA3D00B6B722 /* inl.cpp in Sources */,
+				8A487B3A18F7AA3D00B6B722 /* select.cpp in Sources */,
+				8A487B2D18F7AA3D00B6B722 /* insert.cpp in Sources */,
+				8A487B3418F7AA3D00B6B722 /* Makefile in Sources */,
+				8A487B3818F7AA3D00B6B722 /* print.cpp in Sources */,
+				8A487B3918F7AA3D00B6B722 /* scanselect.cpp in Sources */,
+				8A487B2718F7AA3D00B6B722 /* dbdestroyEC.cpp in Sources */,
+				8A487B3618F7AA3D00B6B722 /* minirelEC.cpp in Sources */,
+				8A487B2418F7AA3D00B6B722 /* dbcreate.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A487AF218F7A9E700B6B722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8A487AF318F7A9E700B6B722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8A487AF518F7A9E700B6B722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Minirel2K",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A487AF618F7A9E700B6B722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Minirel2K",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A487AE618F7A9E700B6B722 /* Build configuration list for PBXProject "Minirel2K" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A487AF218F7A9E700B6B722 /* Debug */,
+				8A487AF318F7A9E700B6B722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A487AF418F7A9E700B6B722 /* Build configuration list for PBXNativeTarget "Minirel2K" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A487AF518F7A9E700B6B722 /* Debug */,
+				8A487AF618F7A9E700B6B722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A487AE318F7A9E700B6B722 /* Project object */;
+}
