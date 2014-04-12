@@ -1,7 +1,7 @@
 #include "catalog.h"
 #include "query.h"
 #include "index.h"
-#include <stdio.h>
+#include <string.h>
 
 /*
  * Inserts a record into the specified relation
