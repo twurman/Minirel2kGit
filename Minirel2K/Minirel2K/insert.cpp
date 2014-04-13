@@ -34,26 +34,42 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 			if(attrList[j].attrName == (aList+i)->attrName){
 				attrInRelation = true;
 				//check if attribute is same type
-				if(attrList[j].attrType != (aList+i)->attrType){
+				if(attrList[j].attrType != (aList+i)->attrType)
 					return ATTRTYPEMISMATCH;
-				}
+				
 				//check that aList->attrLen >= attrList->attrLen
-				if(attrList[j].attrLen > (aList+i)->attrLen){
+				if(attrList[j].attrLen > (aList+i)->attrLen)
 					return ATTRTOOLONG;
-				}
+				
+				//check that value is not null -- nullptr C++11?
+				if(attrList[j].attrValue == NULL)
+					return ATTRNOTFOUND;
+				
+				//all is good, create record
+				memcpy((char *)newRecord.data + newRecord.length, attrList[j].attrValue, attrList[j].attrLen);
+				
+				Status checkIndex;
+				Index i = Index(relation,
+								newRecord.length,
+								attrList[j].attrLen,
+								(Datatype)attrList[j].attrType,
+								NONUNIQUE,
+								checkIndex);
+				
+				if(checkIndex != OK)
+					return checkIndex;
+				
+				newRecord.length += attrList[j].attrLen;
 			}
 		}
 		if(!attrInRelation){
 			return ATTRNOTFOUND;
 		}
-		//all is good, create record
-		memcpy((char *)newRecord.data + newRecord.length, attrList->attrValue, attrList->attrLen);
-		newRecord.length += attrList->attrLen;
 		
-		/*(char *)newRecord.data + newRecord.length = attrList->attrValue;
-		newRecord.data = (char*)newRecord.data + aList->attrLen;*/
 	}
 	
+	//insert record into db & into catalog
+	attrCat->insertRecord(newRecord, newRecRID);
 	
 	
 
