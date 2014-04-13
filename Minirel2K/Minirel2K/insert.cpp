@@ -34,6 +34,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 			cout << attrList[j].attrName << " : " << (aList+i)->attrName << endl;
 			if(attrList[j].attrName == (aList+i)->attrName){
 				attrInRelation = true;
+				cout << "Match!";
 				//check if attribute is same type
 				if(attrList[j].attrType != (aList+i)->attrType){
 					cout << 1;
