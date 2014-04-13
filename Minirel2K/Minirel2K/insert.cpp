@@ -33,19 +33,24 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		for(int j = 0; j < attrCnt; j++){
 			if(attrList[j].attrName == (aList+i)->attrName){
 				attrInRelation = true;
+				cout << "ATTR IS IN RELATION" << endl;
 				//check if attribute is same type
-				if(attrList[j].attrType != (aList+i)->attrType)
+				if(attrList[j].attrType != (aList+i)->attrType){
+					cout << 1;
 					return ATTRTYPEMISMATCH;
-				
+				}
 				//check that aList->attrLen >= attrList->attrLen
-				if(attrList[j].attrLen > (aList+i)->attrLen)
+				if(attrList[j].attrLen > (aList+i)->attrLen){
+					cout << 2;
 					return ATTRTOOLONG;
-				
+				}
 				//check that value is not null -- nullptr C++11?
-				if(attrList[j].attrValue == NULL)
+				if(attrList[j].attrValue == NULL){
+					cout << 3;
 					return ATTRNOTFOUND;
-				
+				}
 				//all is good, create record
+				
 				memcpy((char *)newRecord.data + newRecord.length, attrList[j].attrValue, attrList[j].attrLen);
 				
 				Status checkIndex;
@@ -63,7 +68,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 			}
 		}
 		if(!attrInRelation){
-			cout << "Not in relation";
+			cout << 4;
 			return ATTRNOTFOUND;
 		}
 		
