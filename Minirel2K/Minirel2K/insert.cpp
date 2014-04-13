@@ -31,6 +31,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		attrInRelation = false;
 		//for loop again - check if attribute is in relation
 		for(int j = 0; j < attrCnt; j++){
+			cout << attrList[j].attrName << " : " << (aList+i)->attrName << endl;
 			if(attrList[j].attrName == (aList+i)->attrName){
 				attrInRelation = true;
 				//check if attribute is same type
