@@ -19,11 +19,12 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	AttrDesc *aList;
 	int aCount;
 	bool attrInRelation = false;
-	if(attrCat->getRelInfo(relation, aCount, aList)){
+	if(attrCat->getRelInfo(relation, aCount, aList) != OK){
 		return RELNOTFOUND;
 	} if(aCount != attrCnt){
 		return RELNOTFOUND;
 	}
+	
 	
 	Record newRecord;
 	RID newRecRID;
@@ -32,22 +33,21 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		//for loop again - check if attribute is in relation
 		for(int j = 0; j < attrCnt; j++){
 			cout << attrList[j].attrName << " : " << (aList+i)->attrName << endl;
-			if(strncmp(attrList[j].attrName, (aList+i)->attrName, 0) == 0){
+			strcmp(attrList[j].attrName, "");
+			cout << "made it";
+			if(strcmp(attrList[j].attrName, (aList+i)->attrName) == 0){
 				attrInRelation = true;
 				cout << "Match!";
 				//check if attribute is same type
 				if(attrList[j].attrType != (aList+i)->attrType){
-					cout << 1;
 					return ATTRTYPEMISMATCH;
 				}
 				//check that aList->attrLen >= attrList->attrLen
 				if(attrList[j].attrLen > (aList+i)->attrLen){
-					cout << 2;
 					return ATTRTOOLONG;
 				}
 				//check that value is not null -- nullptr C++11?
 				if(attrList[j].attrValue == NULL){
-					cout << 3;
 					return ATTRNOTFOUND;
 				}
 				//all is good, create record
@@ -69,7 +69,6 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 			}
 		}
 		/*if(!attrInRelation){
-			cout << 4;
 			return ATTRNOTFOUND;
 		}*/
 		
