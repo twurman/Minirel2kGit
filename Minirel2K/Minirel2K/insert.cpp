@@ -32,7 +32,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		//for loop again - check if attribute is in relation
 		for(int j = 0; j < attrCnt; j++){
 			cout << attrList[j].attrName << " : " << (aList+i)->attrName << endl;
-			if(strcmp(attrList[j].attrName, (aList+i)->attrName) == 0){
+			if(attrList[j].attrName == (aList+i)->attrName){
 				attrInRelation = true;
 				cout << "Match!";
 				//check if attribute is same type
@@ -68,10 +68,10 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				newRecord.length += attrList[j].attrLen;
 			}
 		}
-		if(!attrInRelation){
+		/*if(!attrInRelation){
 			cout << 4;
 			return ATTRNOTFOUND;
-		}
+		}*/
 		
 	}
 	
