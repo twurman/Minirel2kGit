@@ -63,6 +63,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 			}
 		}
 		if(!attrInRelation){
+			cout << "Not in relation";
 			return ATTRNOTFOUND;
 		}
 		
