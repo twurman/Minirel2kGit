@@ -68,7 +68,8 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				memcpy((char*)newRecord.data + newRecord.length, attrList[j].attrValue, attrList[j].attrLen + 1);
 				
 				
-				Status checkIndex;
+				Status checkIndex = OK;
+				cout << attrList[j].attrType << endl;
 				indices[i] = new Index(relation,
 									newRecord.length,
 									attrList[j].attrLen,
@@ -97,7 +98,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	HeapFile page = HeapFile(relation, heapInsert);
 	page.insertRecord(newRecord, newRecRID);
 	for(int i = 0; i < aCount; i++){
-		//indices[i]->insertEntry(attrList[i].attrValue, newRecRID);
+		indices[i]->insertEntry(attrList[i].attrValue, newRecRID);
 	}
 	
 	Utilities::Print(relation);
