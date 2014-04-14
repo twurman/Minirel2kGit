@@ -29,8 +29,12 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	//get number of bytes to allocate
 	int recSize = 0;
 	for(int i = 0; i < aCount; i++){
-		recSize += aList[i].attrLen;
-		recSize++;
+		if(attrList[i].attrType == STRING){
+			recSize += aList[i].attrLen;
+			recSize++;
+		} else {
+			recSize += aList[i].attrLen;
+		}
 	}
 	cout << "Num bytes to allocate: " << recSize << endl;
 	void * rec = malloc(recSize);
@@ -62,7 +66,12 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 					return ATTRNOTFOUND;
 				}
 				//all is good, add to record
-				memcpy((char*)rec + newRecord.length, attrList[j].attrValue, attrList[j].attrLen + 1);
+				if(attrList[j].attrType == STRING){
+					memcpy((char*)rec + newRecord.length, attrList[j].attrValue, attrList[j].attrLen + 1);
+				} else {
+					memcpy((char*)rec + newRecord.length, attrList[j].attrValue, attrList[j].attrLen);
+				}
+				
 				
 				/*Status checkIndex;
 				Index i = Index(relation,
