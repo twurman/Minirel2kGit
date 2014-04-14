@@ -104,8 +104,8 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	if(heapInsert != OK){
 		return heapInsert;
 	}
-	cerr << "Inserting record\n";
 	page.insertRecord(newRecord, newRecRID);
+	cout << newRecRID.pageNo << endl;
 	//add index for all indexed elements
 	for(int i = 0; i < numKeys; i++){
 		indices[i]->insertEntry(attrList[keyNums[i]].attrValue, newRecRID);
