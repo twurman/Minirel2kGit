@@ -37,7 +37,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	//get number of bytes to allocate
 	int recSize = 0;
 	for(int i = 0; i < aCount; i++){
-		recSize += aList[i].attrLen;
+		recSize += (aList+i)->attrLen;
 	}
 	newRecord.data = malloc(recSize);
 	newRecord.length = recSize;
@@ -71,12 +71,12 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				memcpy((char*)newRecord.data + (aList+i)->attrOffset, attrList[j].attrValue, (aList+i)->attrLen);
 				
 				
-				/*if((aList+i)->indexed){
+				if((aList+i)->indexed){
 					Status checkIndex = OK;
 					indices[numKeys] = new Index(relation,
 												 (aList+i)->attrOffset,
 												 (aList+i)->attrLen,
-												 (Datatype)attrList[j].attrType,
+												 (Datatype)(aList+i)->attrType,
 												 NONUNIQUE,
 												 checkIndex);
 					keyNums[numKeys++] = j;
@@ -84,7 +84,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 					if(checkIndex != OK){
 						return checkIndex;
 					}
-				}*/
+				}
 				
 				
 			}
@@ -108,9 +108,9 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		return heapInsert;
 	}
 	//add index for all indexed elements
-	/*for(int i = 0; i < numKeys; i++){
+	for(int i = 0; i < numKeys; i++){
 		indices[i]->insertEntry(attrList[keyNums[i]].attrValue, newRecRID);
-	}*/
+	}
 	
 	Utilities::Print(relation);
 	
