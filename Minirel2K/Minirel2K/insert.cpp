@@ -25,6 +25,12 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		return RELNOTFOUND;
 	}
 	
+	//get number of bytes to allocate
+	int recSize = 0;
+	for(int i = 0; i < aCount; i++){
+		recSize += aList[i].attrLen;
+	}
+	void * rec = malloc(recSize);
 	
 	Record newRecord;
 	RID newRecRID;
@@ -36,21 +42,23 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				attrInRelation = true;
 				//check if attribute is same type
 				if(attrList[j].attrType != (aList+i)->attrType){
+					free(rec);
 					return ATTRTYPEMISMATCH;
 				}
 				//check that aList->attrLen >= attrList->attrLen
 				if(attrList[j].attrLen > (aList+i)->attrLen){
+					free(rec);
 					return ATTRTOOLONG;
 				}
 				//check that value is not null -- nullptr C++11?
 				if(attrList[j].attrValue == NULL){
+					free(rec);
 					return ATTRNOTFOUND;
 				}
 				//all is good, create record
+				memcpy((char*)rec + newRecord.length, attrList[j].attrValue, attrList[j].attrLen);
 				
-				memcpy(newRecord.data, attrList[j].attrValue, attrList[j].attrLen);
-				
-				Status checkIndex;
+				/*Status checkIndex;
 				Index i = Index(relation,
 								newRecord.length,
 								attrList[j].attrLen,
@@ -61,20 +69,25 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				
 				if(checkIndex != OK)
 					return checkIndex;
-				
+				*/
 				newRecord.length += attrList[j].attrLen;
 			}
 		}
 		if(!attrInRelation){
+			free(rec);
 			return ATTRNOTFOUND;
 		}
 		
 	}
 	
+	newRecord.data = rec;
+	
 	//insert record into db & into catalog
 	Status heapInsert;
 	HeapFile page = HeapFile(relation, heapInsert);
 	page.insertRecord(newRecord, newRecRID);
+	
+	
 	
 	
 	
