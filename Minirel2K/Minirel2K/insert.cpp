@@ -57,7 +57,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 					return ATTRNOTFOUND;
 				}
 				//all is good, create record
-				//memcpy((char*)rec + newRecord.length, attrList[j].attrValue, attrList[j].attrLen);
+				memcpy(rec, attrList[j].attrValue, attrList[j].attrLen);
 				
 				/*Status checkIndex;
 				Index i = Index(relation,
