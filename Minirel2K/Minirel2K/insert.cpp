@@ -58,6 +58,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 								NONUNIQUE,
 								checkIndex);
 				
+				
 				if(checkIndex != OK)
 					return checkIndex;
 				
@@ -71,7 +72,10 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	}
 	
 	//insert record into db & into catalog
-	attrCat->insertRecord(newRecord, newRecRID);
+	Status heapInsert;
+	HeapFile page = HeapFile(relation, heapInsert);
+	page.insertRecord(newRecord, newRecRID);
+	
 	
 	
 
