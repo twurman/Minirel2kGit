@@ -45,20 +45,24 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				//check if attribute is same type
 				if(attrList[j].attrType != (aList+i)->attrType){
 					free(rec);
+					rec = NULL;
 					return ATTRTYPEMISMATCH;
 				}
 				//check that aList->attrLen >= attrList->attrLen
 				if(attrList[j].attrLen > (aList+i)->attrLen){
 					free(rec);
+					rec = NULL;
 					return ATTRTOOLONG;
 				}
 				//check that value is not null -- nullptr C++11?
 				if(attrList[j].attrValue == NULL){
 					free(rec);
+					rec = NULL;
 					return ATTRNOTFOUND;
 				}
 				//all is good, add to record
-				memcpy(rec, attrList[j].attrValue, attrList[j].attrLen);
+				cout << (char*)attrList[j].attrValue;
+				//memcpy(rec, attrList[j].attrValue, attrList[j].attrLen);
 				
 				/*Status checkIndex;
 				Index i = Index(relation,
@@ -77,6 +81,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		}
 		if(!attrInRelation){
 			free(rec);
+			rec = NULL;
 			return ATTRNOTFOUND;
 		}
 		
