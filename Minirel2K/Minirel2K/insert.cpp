@@ -33,7 +33,6 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	}
 	cout << "Num bytes to allocate: " << recSize << endl;
 	void * rec = malloc(recSize * 2);
-	cout << rec << endl;
 	
 	Record newRecord;
 	RID newRecRID;
@@ -62,7 +61,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 					return ATTRNOTFOUND;
 				}
 				//all is good, add to record
-				memcpy((char*)rec + newRecord.length, attrList[j].attrValue, attrList[j].attrLen);
+				memcpy((char*)rec + newRecord.length, attrList[j].attrValue, attrList[j].attrLen+1);
 				
 				/*Status checkIndex;
 				Index i = Index(relation,
