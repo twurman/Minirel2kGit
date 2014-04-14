@@ -26,21 +26,18 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		return RELNOTFOUND;
 	}
 	
+	Record newRecord;
+	RID newRecRID;
+	
 	//get number of bytes to allocate
 	int recSize = 0;
 	for(int i = 0; i < aCount; i++){
-		if(attrList[i].attrType == STRING){
-			recSize += aList[i].attrLen;
-			recSize++;
-		} else {
-			recSize += aList[i].attrLen;
-		}
+		recSize += aList[i].attrLen;
+		recSize++;
 	}
-	cout << "Num bytes to allocate: " << recSize << endl;
-	void * rec = malloc(recSize);
+	newRecord.data = malloc(recSize);
 	
-	Record newRecord;
-	RID newRecRID;
+	
 	for(int i = 0; i < aCount; i++){
 		attrInRelation = false;
 		//for loop again - check if attribute is in relation
@@ -49,29 +46,24 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				attrInRelation = true;
 				//check if attribute is same type
 				if(attrList[j].attrType != (aList+i)->attrType){
-					free(rec);
-					rec = NULL;
+					free(newRecord.data);
+					newRecord.data = NULL;
 					return ATTRTYPEMISMATCH;
 				}
 				//check that aList->attrLen >= attrList->attrLen
 				if(attrList[j].attrLen > (aList+i)->attrLen){
-					free(rec);
-					rec = NULL;
+					free(newRecord.data);
+					newRecord.data = NULL;
 					return ATTRTOOLONG;
 				}
 				//check that value is not null -- nullptr C++11?
 				if(attrList[j].attrValue == NULL){
-					free(rec);
-					rec = NULL;
+					free(newRecord.data);
+					newRecord.data = NULL;
 					return ATTRNOTFOUND;
 				}
 				//all is good, add to record
-				if(attrList[j].attrType == STRING){
-					memcpy((char*)rec + newRecord.length, attrList[j].attrValue, attrList[j].attrLen + 1);
-				} else {
-					memcpy((char*)rec + newRecord.length, attrList[j].attrValue, attrList[j].attrLen);
-				}
-				
+				memcpy((char*)newRecord.data + newRecord.length, attrList[j].attrValue, attrList[j].attrLen + 1);
 				
 				/*Status checkIndex;
 				Index i = Index(relation,
@@ -86,23 +78,23 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 					return checkIndex;
 				*/
 				newRecord.length += attrList[j].attrLen;
+				newRecord.length++;
 			}
 		}
 		if(!attrInRelation){
-			free(rec);
-			rec = NULL;
+			free(newRecord.data);
+			newRecord.data = NULL;
 			return ATTRNOTFOUND;
 		}
 		
 	}
-	
-	newRecord.data = rec;
 	
 	//insert record into db & into catalog
 	Status heapInsert;
 	HeapFile page = HeapFile(relation, heapInsert);
 	page.insertRecord(newRecord, newRecRID);
 	
+	Utilities::Print(relation);
 	
 	
 	
