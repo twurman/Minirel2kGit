@@ -70,20 +70,22 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				memcpy((char*)newRecord.data + newRecord.length, attrList[j].attrValue, (aList+i)->attrLen);
 				
 				
+				if((aList+i)->indexed){
+					Status checkIndex = OK;
+					indices[numKeys] = new Index(relation,
+												 (aList+i)->attrOffset,
+												 (aList+i)->attrLen,
+												 (Datatype)attrList[j].attrType,
+												 NONUNIQUE,
+												 checkIndex);
+					keyNums[numKeys++] = j;
+					
+					cerr << numKeys << endl;
+					if(checkIndex != OK){
+						return checkIndex;
+					}
+				}
 				
-				Status checkIndex = OK;
-				indices[numKeys] = new Index(relation,
-										(aList+i)->attrOffset,
-										(aList+i)->attrLen,
-										(Datatype)attrList[j].attrType,
-										NONUNIQUE,
-										checkIndex);
-				keyNums[numKeys++] = j;
-				
-				
-				
-				if(checkIndex != OK)
-					return checkIndex;
 				
 				newRecord.length += attrList[j].attrLen;
 				newRecord.length++;
