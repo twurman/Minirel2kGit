@@ -70,7 +70,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				
 				Status checkIndex;
 				indices[i] = new Index(relation,
-									(aList+i)->attrOffset,
+									newRecord.length,
 									attrList[j].attrLen,
 									(Datatype)attrList[j].attrType,
 									NONUNIQUE,
@@ -97,7 +97,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	HeapFile page = HeapFile(relation, heapInsert);
 	page.insertRecord(newRecord, newRecRID);
 	for(int i = 0; i < aCount; i++){
-		indices[i]->insertEntry(attrList[i].attrValue, newRecRID);
+		//indices[i]->insertEntry(attrList[i].attrValue, newRecRID);
 	}
 	
 	Utilities::Print(relation);
