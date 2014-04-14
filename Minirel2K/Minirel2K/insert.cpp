@@ -32,11 +32,8 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		attrInRelation = false;
 		//for loop again - check if attribute is in relation
 		for(int j = 0; j < attrCnt; j++){
-			cout << attrList[j].attrName << " : " << (aList+i)->attrName << endl;
-			cout << "made it";
 			if(strcmp(attrList[j].attrName, (aList+i)->attrName) == 0){
 				attrInRelation = true;
-				cout << "Match!";
 				//check if attribute is same type
 				if(attrList[j].attrType != (aList+i)->attrType){
 					return ATTRTYPEMISMATCH;
@@ -51,7 +48,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				}
 				//all is good, create record
 				
-				//memcpy((char *)newRecord.data + newRecord.length, attrList[j].attrValue, attrList[j].attrLen);
+				memcpy(newRecord.data, attrList[j].attrValue, attrList[j].attrLen);
 				
 				Status checkIndex;
 				Index i = Index(relation,
@@ -67,9 +64,9 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				newRecord.length += attrList[j].attrLen;
 			}
 		}
-		/*if(!attrInRelation){
+		if(!attrInRelation){
 			return ATTRNOTFOUND;
-		}*/
+		}
 		
 	}
 	
