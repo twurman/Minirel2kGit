@@ -80,7 +80,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 												 checkIndex);
 					keyNums[numKeys++] = j;
 					
-					cerr << numKeys << endl;
+					cerr << "NumKeys: " << numKeys << endl;
 					if(checkIndex != OK){
 						return checkIndex;
 					}
@@ -102,6 +102,9 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	//insert record into db & into catalog
 	Status heapInsert;
 	HeapFile page = HeapFile(relation, heapInsert);
+	if(heapInsert != OK){
+		return heapInsert;
+	}
 	page.insertRecord(newRecord, newRecRID);
 	//add index for all indexed elements
 	for(int i = 0; i < numKeys; i++){
