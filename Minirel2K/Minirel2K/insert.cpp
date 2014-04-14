@@ -29,13 +29,14 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	
 	Record newRecord;
 	RID newRecRID;
+	int numKeys = 0;
 	Index* indices[aCount];
+	int keyNums[aCount];
 	
 	//get number of bytes to allocate
 	int recSize = 0;
 	for(int i = 0; i < aCount; i++){
 		recSize += aList[i].attrLen;
-		recSize++;
 	}
 	newRecord.data = malloc(recSize);
 	newRecord.length = 0;
@@ -66,21 +67,23 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 					return ATTRNOTFOUND;
 				}
 				//all is good, add to record
-				memcpy((char*)newRecord.data + newRecord.length, attrList[j].attrValue, attrList[j].attrLen + 1);
+				memcpy((char*)newRecord.data + newRecord.length, attrList[j].attrValue, (aList+i)->attrLen);
+				
 				
 				
 				Status checkIndex = OK;
-				cout << newRecord.length << " : " << attrList[j].attrLen << endl;
-				indices[i] = new Index(relation,
-									newRecord.length,
-									attrList[j].attrLen,
-									(Datatype)attrList[j].attrType,
-									NONUNIQUE,
-									checkIndex);
-					
+				indices[numKeys] = new Index(relation,
+										(aList+i)->attrOffset,
+										(aList+i)->attrLen,
+										(Datatype)attrList[j].attrType,
+										NONUNIQUE,
+										checkIndex);
+				keyNums[numKeys++] = j;
+				
+				
+				
 				if(checkIndex != OK)
 					return checkIndex;
-				
 				
 				newRecord.length += attrList[j].attrLen;
 				newRecord.length++;
@@ -98,8 +101,9 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	Status heapInsert;
 	HeapFile page = HeapFile(relation, heapInsert);
 	page.insertRecord(newRecord, newRecRID);
-	for(int i = 0; i < aCount; i++){
-		indices[i]->insertEntry(attrList[i].attrValue, newRecRID);
+	//add index for all indexed elements
+	for(int i = 0; i < numKeys; i++){
+		indices[i]->insertEntry(attrList[keyNums[i]].attrValue, newRecRID);
 	}
 	
 	Utilities::Print(relation);
