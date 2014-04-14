@@ -34,6 +34,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		for(int j = 0; j < attrCnt; j++){
 			cout << attrList[j].attrName << " : " << (aList+i)->attrName << endl;
 			string empty = "";
+			cout << "here";
 			strcmp(attrList[j].attrName, empty.c_str());
 			cout << "made it";
 			if(strcmp(attrList[j].attrName, (aList+i)->attrName) == 0){
