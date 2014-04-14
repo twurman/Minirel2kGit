@@ -17,7 +17,7 @@ INSERT INTO stars(starid, real_name, plays, soapid)
 INSERT INTO stars (real_name, soapid, starid, plays) 
 	VALUES ('Bonarrigo, Laura', 3, 101, 'Cassie');
 
-SELECT * FROM stars;
+-- SELECT * FROM stars;
 
 --
 -- test Insert with indices

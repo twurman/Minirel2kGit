@@ -110,7 +110,6 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	//add index for all indexed elements
 	for(int i = 0; i < numKeys; i++){
 		indices[i]->insertEntry(attrList[keyNums[i]].attrValue, newRecRID);
-		delete indices[i];
 	}
 	
 	Utilities::Print(relation);
