@@ -80,7 +80,6 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 												 checkIndex);
 					keyNums[numKeys++] = j;
 					
-					cerr << "NumKeys: " << numKeys << endl;
 					if(checkIndex != OK){
 						return checkIndex;
 					}
@@ -105,6 +104,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	if(heapInsert != OK){
 		return heapInsert;
 	}
+	cerr << "Inserting record\n";
 	page.insertRecord(newRecord, newRecRID);
 	//add index for all indexed elements
 	for(int i = 0; i < numKeys; i++){
