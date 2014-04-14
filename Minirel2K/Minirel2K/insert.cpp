@@ -3,6 +3,7 @@
 #include "index.h"
 #include <string.h>
 #include <stdlib.h>
+#include "utility.h"
 
 /*
  * Inserts a record into the specified relation
