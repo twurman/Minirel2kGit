@@ -30,9 +30,10 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	int recSize = 0;
 	for(int i = 0; i < aCount; i++){
 		recSize += aList[i].attrLen;
+		recSize++;
 	}
 	cout << "Num bytes to allocate: " << recSize << endl;
-	void * rec = malloc(recSize * 2);
+	void * rec = malloc(recSize);
 	
 	Record newRecord;
 	RID newRecRID;
