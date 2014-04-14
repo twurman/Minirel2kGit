@@ -2,6 +2,7 @@
 #include "query.h"
 #include "index.h"
 #include <string.h>
+#include <stdlib.h>
 
 /*
  * Inserts a record into the specified relation
