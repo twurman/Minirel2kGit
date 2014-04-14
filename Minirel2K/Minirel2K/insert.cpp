@@ -31,6 +31,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	for(int i = 0; i < aCount; i++){
 		recSize += aList[i].attrLen;
 	}
+	cout << "Num bytes to allocate: " << recSize << endl;
 	void * rec = malloc(recSize);
 	
 	Record newRecord;
@@ -56,7 +57,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 					free(rec);
 					return ATTRNOTFOUND;
 				}
-				//all is good, create record
+				//all is good, add to record
 				memcpy(rec, attrList[j].attrValue, attrList[j].attrLen);
 				
 				/*Status checkIndex;
