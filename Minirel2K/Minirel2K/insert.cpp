@@ -69,7 +69,6 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				
 				
 				Status checkIndex = OK;
-				cout << attrList[j].attrType << endl;
 				indices[i] = new Index(relation,
 									newRecord.length,
 									attrList[j].attrLen,

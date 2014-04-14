@@ -36,15 +36,18 @@ Index::Index(const string & name,
   }
   if (offset < 0 || length < 1) {
     status = BADINDEXPARM;
+	  cout << "1";
     return;
   }
 
   if (type != STRING && type != INTEGER && type != DOUBLE){
+	  cout << "2";
     status = BADINDEXPARM;
     return;
   }
-  if (type == INTEGER && length != sizeof(int)
-      || type == DOUBLE && length != sizeof(double)) {
+  if ((type == INTEGER && length != sizeof(int))
+      || (type == DOUBLE && length != sizeof(double))) {
+	  cout << 3;
     status = BADINDEXPARM;
     return;
   }
