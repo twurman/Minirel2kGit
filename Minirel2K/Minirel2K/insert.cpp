@@ -104,6 +104,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	}
 	heapInsert = page.insertRecord(newRecord, newRecRID);
 	if(heapInsert != OK){
+		cerr << "ERROR";
 		return heapInsert;
 	}
 	//add index for all indexed elements
