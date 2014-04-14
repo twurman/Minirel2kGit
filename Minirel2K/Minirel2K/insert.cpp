@@ -38,6 +38,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		recSize++;
 	}
 	newRecord.data = malloc(recSize);
+	newRecord.length = 0;
 	
 	
 	for(int i = 0; i < aCount; i++){
