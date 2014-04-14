@@ -3,8 +3,7 @@
 #include "index.h"
 #include <string.h>
 #include <stdlib.h>
-//#include "utility.h"
-#include "print.cpp"
+#include "utility.h"
 
 /*
  * Inserts a record into the specified relation
@@ -72,7 +71,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				memcpy((char*)newRecord.data + (aList+i)->attrOffset, attrList[j].attrValue, (aList+i)->attrLen);
 				
 				
-				if((aList+i)->indexed){
+				/*if((aList+i)->indexed){
 					Status checkIndex = OK;
 					indices[numKeys] = new Index(relation,
 												 (aList+i)->attrOffset,
@@ -85,7 +84,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 					if(checkIndex != OK){
 						return checkIndex;
 					}
-				}
+				}*/
 				
 				
 			}
@@ -106,19 +105,14 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	}
 	heapInsert = page.insertRecord(newRecord, newRecRID);
 	if(heapInsert != OK){
-		cerr << "ERROR";
 		return heapInsert;
 	}
 	//add index for all indexed elements
-	for(int i = 0; i < numKeys; i++){
+	/*for(int i = 0; i < numKeys; i++){
 		indices[i]->insertEntry(attrList[keyNums[i]].attrValue, newRecRID);
-	}
+	}*/
 	
-	UT_printRec(aCount, aList, &aList->attrLen, newRecord);
 	Utilities::Print(relation);
-	
-	
-	
 	
 
     return OK;
