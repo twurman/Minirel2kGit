@@ -102,7 +102,10 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	if(heapInsert != OK){
 		return heapInsert;
 	}
-	page.insertRecord(newRecord, newRecRID);
+	heapInsert = page.insertRecord(newRecord, newRecRID);
+	if(heapInsert != OK){
+		return heapInsert;
+	}
 	//add index for all indexed elements
 	for(int i = 0; i < numKeys; i++){
 		indices[i]->insertEntry(attrList[keyNums[i]].attrValue, newRecRID);
