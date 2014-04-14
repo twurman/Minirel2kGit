@@ -39,7 +39,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		recSize += aList[i].attrLen;
 	}
 	newRecord.data = malloc(recSize);
-	newRecord.length = 0;
+	newRecord.length = recSize;
 	
 	
 	for(int i = 0; i < aCount; i++){
@@ -67,7 +67,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 					return ATTRNOTFOUND;
 				}
 				//all is good, add to record
-				memcpy((char*)newRecord.data + newRecord.length, attrList[j].attrValue, (aList+i)->attrLen);
+				memcpy((char*)newRecord.data + (aList+i)->attrOffset, attrList[j].attrValue, (aList+i)->attrLen);
 				
 				
 				if((aList+i)->indexed){
@@ -86,8 +86,6 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 				}
 				
 				
-				newRecord.length += attrList[j].attrLen;
-				newRecord.length++;
 			}
 		}
 		if(!attrInRelation){
@@ -105,7 +103,6 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		return heapInsert;
 	}
 	page.insertRecord(newRecord, newRecRID);
-	cout << newRecRID.pageNo << endl;
 	//add index for all indexed elements
 	for(int i = 0; i < numKeys; i++){
 		indices[i]->insertEntry(attrList[keyNums[i]].attrValue, newRecRID);
