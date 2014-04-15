@@ -16,17 +16,24 @@ Status Operators::Select(const string & result,      // name of the output relat
 						 const Operator op,         // predicate operation
 						 const void *attrValue)     // literal value in the predicate
 {
+	
+	
 	AttrDesc predicate;
 	if(attr != NULL){
 		attrCat->getInfo(attr->relName, attr->attrName, predicate);
 	}
 	int recLen = 0;
-	AttrDesc temp;
+	AttrDesc temp[projCnt];
 	for(int i = 0; i < projCnt; i++){
-		attrCat->getInfo(projNames[i].relName, projNames[i].attrName, temp);
-		recLen += temp.attrLen;
+		attrCat->getInfo(projNames[i].relName, projNames[i].attrName, temp[i]);
+		recLen += temp[i].attrLen;
 	}
-	cerr << "Result Record Length: " <<  recLen << endl;
+	
+	if(op == EQ && attr != NULL && predicate.indexed){
+		IndexSelect(result, projCnt, temp, &predicate, op, attrValue, recLen);
+	} else {
+		ScanSelect(result, projCnt, temp, &predicate, op, attrValue, recLen);
+	}
 	
 	/*
 	cerr << "Result File: " << result << endl;
