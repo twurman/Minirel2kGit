@@ -21,19 +21,21 @@ Status Operators::IndexSelect(const string& result,       // Name of the output 
 		return getRes;
 	}
 	
-	cerr << "fuck segfaults" << endl;
+	cerr << "fuck segfaults1" << endl;
 	//get index for relation
 	Index ind = Index(attrDesc->relName, attrDesc->attrOffset, attrDesc->attrLen, (Datatype)attrDesc->attrType, NONUNIQUE, getRes);
 	if(getRes != OK){
 		return getRes;
 	}
 	
+	cerr << "fuck segfaults2" << endl;
 	//start index scan
 	getRes = ind.startScan(attrValue);
 	if(getRes != OK){
 		return getRes;
 	}
 	
+	cerr << "fuck segfaults3" << endl;
 	RID lookup;
 	Record rec, newRec;
 	newRec.length = 0;
@@ -41,20 +43,23 @@ Status Operators::IndexSelect(const string& result,       // Name of the output 
 	if(getRes != OK){
 		return getRes;
 	}
-	
+	cerr << "fuck segfaults4" << endl;
 	//scan all the records that match the index value
 	while(ind.scanNext(lookup) == OK){
 		//lookup the matching record using the heapfilescan
 		db.getRandomRecord(lookup, rec);
 		//build the projected Record
+		cerr << "fuck segfaults8" << endl;
 		for(int i = 0; i < projCnt; i++){
+			cerr << "fuck segfaults7" << endl;
 			memcpy((char*)newRec.data + newRec.length, (char*)rec.data + projNames[i].attrOffset, projNames[i].attrLen);
+			cerr << "fuck segfaults9" << endl;
 			newRec.length += projNames[i].attrLen;
 		}
 		//insert the projected Record into result
 		res.insertRecord(newRec, lookup);
 	}
-	
+	cerr << "fuck segfaults5" << endl;
 	
 	ind.endScan();
 	
