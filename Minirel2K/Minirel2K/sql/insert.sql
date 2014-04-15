@@ -17,7 +17,7 @@ INSERT INTO stars(starid, real_name, plays, soapid)
 INSERT INTO stars (real_name, soapid, starid, plays) 
 	VALUES ('Bonarrigo, Laura', 3, 101, 'Cassie');
 
--- SELECT * FROM stars;
+SELECT * FROM stars;
 
 --
 -- test Insert with indices
@@ -34,8 +34,8 @@ INSERT INTO soaps (network, rating, name, soapid)
 	VALUES ('ABC', 3.35, 'Loving', 101);
 
 -- run a few select queries
--- SELECT soaps.network, soaps.rating FROM soaps WHERE soaps.soapid = 101;
--- SELECT stars.soapid, stars.real_name FROM stars;
+SELECT soaps.network, soaps.rating FROM soaps WHERE soaps.soapid = 101;
+SELECT stars.soapid, stars.real_name FROM stars;
 
 DROP TABLE soaps;
 DROP TABLE stars;

@@ -113,7 +113,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		delete indices[i];
 	}
 	
-	//Utilities::Print(relation);
+	Utilities::Print(relation);
 	
 
     return OK;
