@@ -103,8 +103,8 @@ SortedFile::SortedFile(const string & fileName,
     status = BADSORTPARM;
   else if (type != STRING && type != INTEGER && type != DOUBLE)
     status = BADSORTPARM;
-  else if (type == INTEGER && len != sizeof(int)
-	   || type == DOUBLE && len != sizeof(double))
+  else if ((type == INTEGER && len != sizeof(int))
+	   || (type == DOUBLE && len != sizeof(double)))
     status = BADSORTPARM;
 
   if (status != OK)

@@ -318,8 +318,8 @@ const Status HeapFileScan::startScan(const int offset_,
 
   if ((offset_ < 0 || length_ < 1) ||
       (type_ != STRING && type_ != INTEGER && type_ != DOUBLE) ||
-      (type_ == INTEGER && length_ != sizeof(int)
-       || type_ == DOUBLE && length_ != sizeof(double)) ||
+      ((type_ == INTEGER && length_ != sizeof(int))
+       || (type_ == DOUBLE && length_ != sizeof(double))) ||
       (op_ != LT && op_ != LTE && op_ != EQ && op_ != GTE && op_ != GT && op_ !=
  NE))
     {
