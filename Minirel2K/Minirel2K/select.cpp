@@ -19,19 +19,19 @@ Status Operators::Select(const string & result,      // name of the output relat
 	
 	cerr << "Result File: " << result << endl;
 	for(int i = 0; i < projCnt; i++){
-		cerr << projNames[i].relName << ", " << projNames[i].attrName << ", " << (Datatype)projNames[i].attrType << ", " << projNames[i].attrLen << ", ";
-		/*if((Datatype)projNames[i].attrType == INTEGER){
-			cout << (int*)projNames[i].attrValue << endl;
+		cerr << "Projection: " << projNames[i].relName << ", " << projNames[i].attrName << ", " << (Datatype)projNames[i].attrType << ", " << projNames[i].attrLen << ", " << endl;
+		if((Datatype)projNames[i].attrType == INTEGER){
+			cout << projNames[i].attrValue << endl;
 		} else if((Datatype)projNames[i].attrType == DOUBLE){
-			cout << (double*)projNames[i].attrValue << endl;
+			cout << projNames[i].attrValue << endl;
 		} else {
-			cout << (char*)projNames[i].attrValue << endl;
-		}*/
+			cout << projNames[i].attrValue << endl;
+		}
 	}
-	cerr << attr->relName << ", " << attr->attrName << ", " << attr->attrLen << ", " << attr->attrType << ", " << /*(char*)attr->attrValue <<*/ endl;
+	cerr << attr->relName << ", " << attr->attrName << ", " << attr->attrLen << ", " << attr->attrType << ", " << attr->attrValue << endl;
 	
 	cerr << op << endl;
-	cerr << (char*)attrValue;
+	cerr << attrValue << endl;
 	
 	//if index and op is equality, call indexSelect
 	/*if(attr == NULL){
