@@ -16,9 +16,9 @@ Status Operators::Select(const string & result,      // name of the output relat
 						 const Operator op,         // predicate operation
 						 const void *attrValue)     // literal value in the predicate
 {
-	AttrDesc *predicate = NULL;
+	AttrDesc predicate;
 	if(attr != NULL){
-		attrCat->getInfo(attr->relName, attr->attrName, *predicate);
+		attrCat->getInfo(attr->relName, attr->attrName, predicate);
 	}
 	int recLen = 0;
 	AttrDesc temp;
