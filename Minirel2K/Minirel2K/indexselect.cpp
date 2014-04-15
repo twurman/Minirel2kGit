@@ -21,6 +21,7 @@ Status Operators::IndexSelect(const string& result,       // Name of the output 
 		return getRes;
 	}
 	
+	cerr << "fuck segfaults" << endl;
 	//get index for relation
 	Index ind = Index(attrDesc->relName, attrDesc->attrOffset, attrDesc->attrLen, (Datatype)attrDesc->attrType, NONUNIQUE, getRes);
 	if(getRes != OK){
