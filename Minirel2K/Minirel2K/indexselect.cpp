@@ -47,14 +47,13 @@ Status Operators::IndexSelect(const string& result,       // Name of the output 
 	//scan all the records that match the index value
 	while(ind.scanNext(lookup) == OK){
 		//lookup the matching record using the heapfilescan
-		db.getRandomRecord(lookup, rec);
-		cerr << (char*)rec.data << endl;
+		db.getRandomRecord(lookup, rec);		// --------->> working correctly?
 		//build the projected Record
 		cerr << "fuck segfaults8" << endl;
 		for(int i = 0; i < projCnt; i++){
 			cerr << "fuck segfaults7" << endl;
-			memcpy((char*)newRec.data + newRec.length, (char*)rec.data + projNames[i].attrOffset, projNames[i].attrLen);
-			cerr << "fuck segfaults9" << endl;
+			//memcpy((char*)newRec.data + newRec.length, (char*)rec.data + projNames[i].attrOffset, projNames[i].attrLen);
+			cerr << (char*)rec.data + projNames[i].attrOffset << endl;
 			newRec.length += projNames[i].attrLen;
 		}
 		//insert the projected Record into result
