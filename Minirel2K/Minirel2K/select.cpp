@@ -17,6 +17,32 @@ Status Operators::Select(const string & result,      // name of the output relat
 						 const void *attrValue)     // literal value in the predicate
 {
 	
+	cout << result << endl;
+	for(int i = 0; i < projCnt; i++){
+		cout << projNames[i].relName << ", " << projNames[i].attrName << ", " << (Datatype)projNames[i].attrType << ", " << projNames[i].attrLen << ", ";
+		if((Datatype)projNames[i].attrType == INTEGER){
+			cout << (int*)projNames[i].attrValue << endl;
+		} else if((Datatype)projNames[i].attrType == DOUBLE){
+			cout << (double*)projNames[i].attrValue << endl;
+		} else {
+			cout << (char*)projNames[i].attrValue << endl;
+		}
+	}
+	cout << attr->relName << ", " << attr->attrName << ", " << attr->attrLen << ", " << attr->attrType << ", " << (char*)attr->attrValue << endl;
+	
+	cout << op << endl;
+	cout << (char*)attrValue;
+	
+	//if index and op is equality, call indexSelect
+	/*if(attr == NULL){
+		int recLen = 0;
+		AttrDesc *aList;
+		for(int i = 0; i < projCnt; i++){
+			recLen += projNames[i].attrLen;
+		}
+		ScanSelect(result, projCnt, projNames, <#const AttrDesc *attrDesc#>, op, attrValue, <#const int reclen#>)
+	}*/
+	//else call scanSelect
 	return OK;
 }
 
