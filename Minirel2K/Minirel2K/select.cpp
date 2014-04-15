@@ -28,7 +28,7 @@ Status Operators::Select(const string & result,      // name of the output relat
 			cout << projNames[i].attrValue << endl;
 		}
 	}
-	cerr << attr->relName << ", " << attr->attrName << ", " << attr->attrLen << ", " << attr->attrType << ", " << attr->attrValue << endl;
+	cerr << attr << endl;
 	
 	cerr << op << endl;
 	cerr << attrValue << endl;
