@@ -48,6 +48,7 @@ Status Operators::IndexSelect(const string& result,       // Name of the output 
 	while(ind.scanNext(lookup) == OK){
 		//lookup the matching record using the heapfilescan
 		db.getRandomRecord(lookup, rec);
+		cerr << (char*)rec.data << endl;
 		//build the projected Record
 		cerr << "fuck segfaults8" << endl;
 		for(int i = 0; i < projCnt; i++){
