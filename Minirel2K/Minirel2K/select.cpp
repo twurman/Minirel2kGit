@@ -17,9 +17,9 @@ Status Operators::Select(const string & result,      // name of the output relat
 						 const void *attrValue)     // literal value in the predicate
 {
 	
-	cout << "Result File: " << result << endl;
+	cerr << "Result File: " << result << endl;
 	for(int i = 0; i < projCnt; i++){
-		cout << projNames[i].relName << ", " << projNames[i].attrName << ", " << (Datatype)projNames[i].attrType << ", " << projNames[i].attrLen << ", ";
+		cerr << projNames[i].relName << ", " << projNames[i].attrName << ", " << (Datatype)projNames[i].attrType << ", " << projNames[i].attrLen << ", ";
 		/*if((Datatype)projNames[i].attrType == INTEGER){
 			cout << (int*)projNames[i].attrValue << endl;
 		} else if((Datatype)projNames[i].attrType == DOUBLE){
@@ -28,10 +28,10 @@ Status Operators::Select(const string & result,      // name of the output relat
 			cout << (char*)projNames[i].attrValue << endl;
 		}*/
 	}
-	cout << attr->relName << ", " << attr->attrName << ", " << attr->attrLen << ", " << attr->attrType << ", " << (char*)attr->attrValue << endl;
+	cerr << attr->relName << ", " << attr->attrName << ", " << attr->attrLen << ", " << attr->attrType << ", " << /*(char*)attr->attrValue <<*/ endl;
 	
-	cout << op << endl;
-	cout << (char*)attrValue;
+	cerr << op << endl;
+	cerr << (char*)attrValue;
 	
 	//if index and op is equality, call indexSelect
 	/*if(attr == NULL){
