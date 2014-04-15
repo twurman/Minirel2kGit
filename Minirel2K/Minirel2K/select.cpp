@@ -26,9 +26,9 @@ Status Operators::Select(const string & result,      // name of the output relat
 		attrCat->getInfo(projNames[i].relName, projNames[i].attrName, temp);
 		recLen += temp.attrLen;
 	}
-	cout << "Result Record Length: " <<  recLen << endl;
+	cerr << "Result Record Length: " <<  recLen << endl;
 	
-	
+	/*
 	cerr << "Result File: " << result << endl;
 	for(int i = 0; i < projCnt; i++){
 		cerr << "Projection: " << projNames[i].relName << ", " << projNames[i].attrName << ", " << (Datatype)projNames[i].attrType << ", " << projNames[i].attrLen << ", " << endl;
@@ -43,7 +43,7 @@ Status Operators::Select(const string & result,      // name of the output relat
 	cerr << attr->relName << ", " << attr->attrName << ", " << attr->attrLen << ", " << attr->attrType << ", " << attr->attrValue << endl;
 	
 	cerr << op << endl;
-	cerr << attrValue << endl;
+	cerr << attrValue << endl;*/
 	
 	//if index and op is equality, call indexSelect
 	/*if(attr == NULL){
