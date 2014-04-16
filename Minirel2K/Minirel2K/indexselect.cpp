@@ -45,7 +45,7 @@ Status Operators::IndexSelect(const string& result,       // Name of the output 
 	//scan all the records that match the index value
 	while(ind.scanNext(lookup) == OK){
 		//lookup the matching record using the heapfilescan
-		db.getRandomRecord(lookup, rec);		// --------->> working correctly?
+		db.getRandomRecord(lookup, rec);
 		//build the projected Record
 		for(int i = 0; i < projCnt; i++){
 			memcpy((char*)newRec.data + newRec.length, (char*)rec.data + projNames[i].attrOffset, projNames[i].attrLen);
