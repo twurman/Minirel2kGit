@@ -1,6 +1,7 @@
 #include "catalog.h"
 #include "query.h"
 #include "index.h"
+#include "heapfile.h"
 #include <stdlib.h>
 #include <string.h>
 
@@ -69,13 +70,13 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 		if(beginScan != OK){
 			return beginScan;
 		}
-		cerr << "jk its here" << endl;
 	}
 	else {
 		//do HeapFileScan with other constructor
 		cout << "IMPLEMENT ME!!" << endl;
 	}
 	
+	free(newRecord.data);
 	
 	
 	
