@@ -36,7 +36,8 @@ Status Operators::Select(const string & result,      // name of the output relat
 		return IndexSelect(result, projCnt, temp, &predicate, op, attrValue, recLen);
 	} else {
 		//call scan select
-		return ScanSelect(result, projCnt, temp, &predicate, op, attrValue, recLen);
+		ScanSelect(result, projCnt, temp, &predicate, op, attrValue, recLen);
+		cerr << "not here";
 	}
 	
 	

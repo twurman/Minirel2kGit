@@ -56,6 +56,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 		while(scanner.scanNext(scannedRID, scannedRec) == OK)
 		{
 			//do the projection stuff
+			newRecord.length = 0;
 			for(int i = 0; i < projCnt; i++){
 				memcpy((char*)newRecord.data + newRecord.length, (char*)scannedRec.data + projNames[i].attrOffset, projNames[i].attrLen);
 				newRecord.length += projNames[i].attrLen;
