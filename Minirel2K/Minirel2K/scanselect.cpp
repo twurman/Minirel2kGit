@@ -30,6 +30,8 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 	
 	Record newRecord,scannedRec;
 	RID newRecRID,scannedRID; //bc we never create an index, we actually don't care what
+	newRecord.data = malloc(reclen);
+	newRecord.length = 0;
 	//this is. we just need it to pass on to insertRecord
 	//We will insert this record into HeapFile res
 	
@@ -38,7 +40,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 	
 	//if (i) attrDesc == NULL, (ii) op == NOTSET or (iii) attrValue == NULL
 	//then we scan the entire relation table. no filters
-	if (attrDesc==NULL || op == NOTSET || attrValue == NULL){
+	if (attrDesc == NULL || op == NOTSET || attrValue == NULL){
 		HeapFileScan scanner = HeapFileScan(projNames[0].relName, getResStatus);
 		if (getResStatus != OK){
 			return getResStatus;
@@ -49,7 +51,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 			return beginScan;
 		}
 		
-		while (scanner.scanNext(scannedRID, scannedRec))
+		while(scanner.scanNext(scannedRID, scannedRec) == OK)
 		{
 			//do the projection stuff
 			for (int i = 0; i < projCnt; i++){
@@ -62,6 +64,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 			//newRecord.length = reclen; //from above
 			//newRecord.data = malloc(newRecord.length); //where do I use this?
 		}
+		scanner.endScan();
 	}
 	else {
 		//do HeapFileScan with other constructor
