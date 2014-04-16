@@ -66,7 +66,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 			//newRecord.length = reclen; //from above
 			//newRecord.data = malloc(newRecord.length); //where do I use this?
 		}
-		
+		cerr << "thought I got here";
 		beginScan = scanner.endScan();
 		if(beginScan != OK){
 			cerr << "didn't work?" << endl;

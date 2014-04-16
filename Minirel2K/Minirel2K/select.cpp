@@ -33,10 +33,10 @@ Status Operators::Select(const string & result,      // name of the output relat
 	
 	if(op == EQ && attr != NULL && predicate.indexed){
 		//call index select
-		IndexSelect(result, projCnt, temp, &predicate, op, attrValue, recLen);
+		return IndexSelect(result, projCnt, temp, &predicate, op, attrValue, recLen);
 	} else {
 		//call scan select
-		ScanSelect(result, projCnt, temp, &predicate, op, attrValue, recLen);
+		return ScanSelect(result, projCnt, temp, &predicate, op, attrValue, recLen);
 	}
 	
 	
