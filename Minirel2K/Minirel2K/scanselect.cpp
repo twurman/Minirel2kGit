@@ -2,6 +2,7 @@
 #include "query.h"
 #include "index.h"
 #include <stdlib.h>
+#include <string.h>
 
 /*
  * A simple scan select using a heap file scan
