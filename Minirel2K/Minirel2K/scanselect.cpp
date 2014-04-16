@@ -69,6 +69,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 		
 		beginScan = scanner.endScan();
 		if(beginScan != OK){
+			cerr << "didn't work?" << endl;
 			free(newRecord.data);
 			return beginScan;
 		}
@@ -78,6 +79,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 		cout << "IMPLEMENT ME!!" << endl;
 	}
 	
+	cerr << "works till now" << endl;
 	free(newRecord.data);
 	
 	
