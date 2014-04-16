@@ -4,15 +4,15 @@
 #include "index.h"
 
 Status Operators::SNL(const string& result,           // Output relation name
-                      const int projCnt,              // Number of attributes in the projection
-                      const AttrDesc attrDescArray[], // Projection list (as AttrDesc)
-                      const AttrDesc& attrDesc1,      // The left attribute in the join predicate
-                      const Operator op,              // Predicate operator
-                      const AttrDesc& attrDesc2,      // The left attribute in the join predicate
-                      const int reclen)               // The length of a tuple in the result relation
+					  const int projCnt,              // Number of attributes in the projection
+					  const AttrDesc attrDescArray[], // Projection list (as AttrDesc)
+					  const AttrDesc& attrDesc1,      // The left attribute in the join predicate
+					  const Operator op,              // Predicate operator
+					  const AttrDesc& attrDesc2,      // The left attribute in the join predicate
+					  const int reclen)               // The length of a tuple in the result relation
 {
 	cout << "Algorithm: Simple NL Join" << endl;
-
+	
 	Status getRes = OK;
 	HeapFile res = HeapFile(result, getRes);
 	if(getRes != OK){
@@ -28,11 +28,12 @@ Status Operators::SNL(const string& result,           // Output relation name
 		return getRes;
 	}
 	
-	RID outerRid, innerRid;
+	RID outerRid, innerRid, newRecRID;
 	Record outerRec, innerRec, newRec;
 	newRec.data = malloc(reclen);
 	newRec.length = 0;
 	
+	Status endScan = OK; //used below
 	Status beginScan = outer.startScan(-1, -1, INTEGER, NULL, NOTSET);
 	if (beginScan != OK){
 		free(newRec.data);
@@ -55,43 +56,41 @@ Status Operators::SNL(const string& result,           // Output relation name
 			newRec.length = 0;
 			int compare = matchRec(outerRec, innerRec, attrDesc1, attrDesc2);
 			
-			//identify comparator
-			if(op == LT && compare < 0){
-				//projection
+			if((op == LT && compare < 0) || (op == LTE && compare <= 0) || (op == GT && compare > 0) ||
+			   (op == GTE && compare >= 0) || (op == NE && compare != 0)){
 				for (int i = 0; i < projCnt; i++){
-					if(attrDescArray[i].relName == attrDesc1.relName){
-						memcpy((char*)newRec.data + newRec.length,(char*)outerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
-					} else {
-						memcpy((char*)newRec.data + newRec.length,(char*)innerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
+					if (attrDescArray[i].relName == attrDesc1.relName){
+						memcpy((char*)newRec.data + newRec.length, (char*)outerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
+					}
+					else {
+						memcpy((char*)newRec.data + newRec.length, (char*)innerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
 					}
 					newRec.length += attrDescArray[i].attrLen;
-					
 				}
-				
-			} else if(op == LTE && compare <= 0){
-				
-			} else if(op == GT && compare > 0){
-				
-			} else if(op == GTE && compare >= 0){
-				
-			} else if(op == NE && compare != 0){
-				
+				//insert projected record into result
+				res.insertRecord(newRec, newRecRID);
 			}
-			
 		}
 		
-		beginScan = inner.endScan();
-		if (beginScan != OK){
+		
+		
+		
+		endScan = inner.endScan();
+		if (endScan != OK){
 			free(newRec.data);
-			return beginScan;
+			return endScan;
 		}
 		
 	}
 	
+	endScan = outer.endScan();
+	if (endScan != OK){
+		free(newRec.data);
+		return endScan;
+	}
 	
 	
 	
 	free(newRec.data);
 	return OK;
 }
-
