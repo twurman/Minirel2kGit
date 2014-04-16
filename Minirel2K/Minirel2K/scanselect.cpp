@@ -38,6 +38,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 	//create our heapfile scanner
 	HeapFileScan scanner = HeapFileScan(projNames[0].relName, getResStatus);
 	if (getResStatus != OK){
+		free(newRecord.data);
 		return getResStatus;
 	}
 	
@@ -53,8 +54,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 		}
 	}
 	else {
-		Status beginScan = scanner.startScan(attrDesc->attrOffset, attrDesc->attrLen,
-											 (Datatype)attrDesc->attrType,(char*)attrValue, op);
+		Status beginScan = scanner.startScan(attrDesc->attrOffset, attrDesc->attrLen, (Datatype)attrDesc->attrType,(char*)attrValue, op);
 		if (beginScan != OK){
 			free(newRecord.data);
 			return beginScan;
