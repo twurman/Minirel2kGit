@@ -49,6 +49,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 		//now proceed to scan through shtuff and modify record
 		Status beginScan = scanner.startScan(-1, -1, INTEGER, NULL, NOTSET);
 		if (beginScan != OK){
+			free(newRecord.data);
 			return beginScan;
 		}
 		
@@ -68,6 +69,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 		
 		beginScan = scanner.endScan();
 		if(beginScan != OK){
+			free(newRecord.data);
 			return beginScan;
 		}
 	}
@@ -79,7 +81,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 	free(newRecord.data);
 	
 	
-	
+	cerr << "done" << endl;
 	
 	
 	return OK;
