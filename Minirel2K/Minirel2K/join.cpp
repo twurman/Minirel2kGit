@@ -23,8 +23,33 @@ Status Operators::Join(const string& result,           // Name of the output rel
     	               const Operator op,              // Predicate operator
     	               const attrInfo* attr2)          // Right attr in the join predicate
 {
-    /* Your solution goes here */
+	AttrDesc at1, at2, temp[projCnt];
+	int recLen = 0;
+	if(attr1 == NULL){
+		return ATTRNOTFOUND;
+	} if(attr2 == NULL){
+		return ATTRNOTFOUND;
+	}
+	//turn attr1 and attr2 into AttrDescs
+	attrCat->getInfo(attr1->relName, attr1->attrName, at1);
+	attrCat->getInfo(attr2->relName, attr2->attrName, at2);
 	
+	for(int i = 0; i < projCnt; i++){
+		//get length of record
+		attrCat->getInfo(projNames[i].relName, projNames[i].attrName, temp[i]);
+		recLen += temp[i].attrLen;
+	}
+	
+	
+	if(op == EQ){
+		if(at1.indexed || at2.indexed){
+			return INL(result, projCnt, temp, at1, op, at2, recLen);
+		} else {
+			return SMJ(result, projCnt, temp, at1, op, at2, recLen);
+		}
+	} else {
+		return SNL(result, projCnt, temp, at1, op, at2, recLen);
+	}
 	
 	
 	return OK;
