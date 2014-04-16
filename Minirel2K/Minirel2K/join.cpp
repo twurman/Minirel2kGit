@@ -24,7 +24,9 @@ Status Operators::Join(const string& result,           // Name of the output rel
     	               const attrInfo* attr2)          // Right attr in the join predicate
 {
     /* Your solution goes here */
-
+	
+	
+	
 	return OK;
 }
 
