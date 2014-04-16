@@ -63,6 +63,7 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 				newRecord.length += projNames[i].attrLen;
 			}
 			//insert the projected Record into result
+			cerr << "prob w/ insert rec";
 			res.insertRecord(newRecord, newRecRID);
 			//scanner.getRecord(newRecRID, newRecord);
 			//newRecord.length = reclen; //from above
