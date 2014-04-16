@@ -101,10 +101,12 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	Status heapInsert;
 	HeapFile page = HeapFile(relation, heapInsert);
 	if(heapInsert != OK){
+		free(newRecord.data);
 		return heapInsert;
 	}
 	heapInsert = page.insertRecord(newRecord, newRecRID);
 	if(heapInsert != OK){
+		free(newRecord.data);
 		return heapInsert;
 	}
 	//add index for all indexed elements
@@ -113,8 +115,6 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		delete indices[i];
 	}
 	
-	//Utilities::Print(relation);
-	
-
-    return OK;
+	free(newRecord.data);
+	return OK;
 }

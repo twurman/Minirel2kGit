@@ -56,6 +56,7 @@ Status Operators::IndexSelect(const string& result,       // Name of the output 
 	}
 	
 	ind.endScan();
+	free(newRec.data);
 	
 	
 	return OK;
