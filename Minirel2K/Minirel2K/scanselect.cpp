@@ -41,21 +41,25 @@ Status Operators::ScanSelect(const string& result,       // Name of the output r
 	//if (i) attrDesc == NULL, (ii) op == NOTSET or (iii) attrValue == NULL
 	//then we scan the entire relation table. no filters
 	if (attrDesc == NULL || op == NOTSET || attrValue == NULL){
+		cerr << "inside" << endl;
 		HeapFileScan scanner = HeapFileScan(projNames[0].relName, getResStatus);
 		if (getResStatus != OK){
 			return getResStatus;
 		}
+		cerr << "tginb" << endl;
 		//now proceed to scan through shtuff and modify record
 		Status beginScan = scanner.startScan(-1, -1, INTEGER, NULL, NOTSET);
 		if (beginScan != OK){
 			return beginScan;
 		}
 		
+		cerr << "not there" << endl;
 		while(scanner.scanNext(scannedRID, scannedRec) == OK)
 		{
+			cerr << "fuck with me" << endl;
 			//do the projection stuff
-			for (int i = 0; i < projCnt; i++){
-				memcpy((char*)newRecord.data+newRecord.length,(char*)scannedRec.data+projNames[i].attrOffset,projNames[i].attrLen);
+			for(int i = 0; i < projCnt; i++){
+				memcpy((char*)newRecord.data + newRecord.length, (char*)scannedRec.data + projNames[i].attrOffset, projNames[i].attrLen);
 				newRecord.length += projNames[i].attrLen;
 			}
 			//insert the projected Record into result
