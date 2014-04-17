@@ -73,7 +73,7 @@ Status Operators::SMJ(const string& result,           // Output relation name
 	
 	
 	while(rightIsGood == OK && leftIsGood == OK){
-		newRec.length = 0;
+		
 		int compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
 		if(compare == 0){
 			Status setmark = right.setMark();
@@ -83,7 +83,7 @@ Status Operators::SMJ(const string& result,           // Output relation name
 			}
 		}
 		while(compare == 0){
-			
+			newRec.length = 0;
 			//project the joined tuple
 			for (int i = 0; i < projCnt; i++){
 				if (attrDescArray[i].relName == attrDesc1.relName){
@@ -98,8 +98,13 @@ Status Operators::SMJ(const string& result,           // Output relation name
 			res.insertRecord(newRec, newRecRID);
 			
 			rightIsGood = right.next(rightRec);
+			if (rightIsGood == OK){
+				compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
+			}
+			else {
+				compare = -1; //break out of while loop
+			}
 			
-			compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
 			
 		}
 		
@@ -107,23 +112,25 @@ Status Operators::SMJ(const string& result,           // Output relation name
 			//scan the next on the left
 			Record nextRec;
 			leftIsGood = left.next(nextRec);
-			if(leftIsGood != OK){
-				free(newRec.data);
-				return leftIsGood;
+			if(leftIsGood == OK){	//continue, otherwise ENDOFPAGE and done
+				if(matchRec(leftRec, nextRec, attrDesc1, attrDesc1) == 0){
+					rightIsGood = right.gotoMark();
+					if(rightIsGood != OK){
+						free(newRec.data);
+						return rightIsGood;
+					}
+				}
+				leftRec = nextRec;
 			}
 	
-			if(matchRec(leftRec, nextRec, attrDesc1, attrDesc1) == 0){
-				Status gotomark = right.gotoMark();
-				if(gotomark != OK){
-					free(newRec.data);
-					return gotomark;
-				}
-			}
-			leftRec = nextRec;
-			
 		} else {
-			//right is bigger, scan the next right tuple
-			right.next(rightRec);
+			//right is smaller, scan the next right tuple and set the mark
+			rightIsGood = right.next(rightRec);
+			Status setmark = right.setMark();
+			if(setmark != OK){
+				free(newRec.data);
+				return setmark;
+			}
 		}
 		
 		
