@@ -61,10 +61,12 @@ Status Operators::SMJ(const string& result,           // Output relation name
 	RID leftRid, rightRid, newRecRID;
 	Status leftIsGood = left.next(leftRec);
 	if(leftIsGood != OK){
+		free(newRec.data);
 		return leftIsGood;
 	}
 	Status rightIsGood = right.next(rightRec);
 	if(rightIsGood != OK){
+		free(newRec.data);
 		return rightIsGood;
 	}
 	
@@ -74,13 +76,54 @@ Status Operators::SMJ(const string& result,           // Output relation name
 		newRec.length = 0;
 		int compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
 		if(compare == 0){
+			Status setmark = right.setMark();
+			if(setmark != OK){
+				free(newRec.data);
+				return setmark;
+			}
+		}
+		while(compare == 0){
+			
 			//project the joined tuple
+			for (int i = 0; i < projCnt; i++){
+				if (attrDescArray[i].relName == attrDesc1.relName){
+					memcpy((char*)newRec.data + newRec.length, (char*)leftRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
+				}
+				else {
+					memcpy((char*)newRec.data + newRec.length, (char*)rightRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
+				}
+				newRec.length += attrDescArray[i].attrLen;
+			}
+			//insert projected record into result
+			res.insertRecord(newRec, newRecRID);
 			
+			rightIsGood = right.next(rightRec);
 			
-		} else if (compare < 0){
+			compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
+			
+		}
+		
+		if (compare < 0){
 			//scan the next on the left
+			Record nextRec;
+			leftIsGood = left.next(nextRec);
+			if(leftIsGood != OK){
+				free(newRec.data);
+				return leftIsGood;
+			}
+	
+			if(matchRec(leftRec, nextRec, attrDesc1, attrDesc1) == 0){
+				Status gotomark = right.gotoMark();
+				if(gotomark != OK){
+					free(newRec.data);
+					return gotomark;
+				}
+			}
+			leftRec = nextRec;
+			
 		} else {
 			//right is bigger, scan the next right tuple
+			right.next(rightRec);
 		}
 		
 		
