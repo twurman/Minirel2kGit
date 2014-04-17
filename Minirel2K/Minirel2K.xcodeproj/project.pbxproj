@@ -97,6 +97,7 @@
 		8A487B2218F7AA3D00B6B722 /* select.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = select.sql; sourceTree = "<group>"; };
 		8A487B2318F7AA3D00B6B722 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
 		8A51D6C81900560B00E395A5 /* extendedJoin.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = extendedJoin.sql; sourceTree = "<group>"; };
+		8A51D6C919005EC500E395A5 /* extendedJoin2.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = extendedJoin2.sql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				8A51D6C81900560B00E395A5 /* extendedJoin.sql */,
+				8A51D6C919005EC500E395A5 /* extendedJoin2.sql */,
 				8A487B1D18F7AA3D00B6B722 /* catalog.sql */,
 				8A487B1E18F7AA3D00B6B722 /* datamation.sql */,
 				8A487B1F18F7AA3D00B6B722 /* insert.sql */,

@@ -20,7 +20,7 @@ Status Operators::INL(const string& result,           // Name of the output rela
 {
   cout << "Algorithm: Indexed NL Join" << endl;
 
-	/*Status getRes = OK;
+	Status getRes = OK;
 	HeapFile res = HeapFile(result, getRes);
 	if(getRes != OK){
 		return getRes;
@@ -112,11 +112,18 @@ Status Operators::INL(const string& result,           // Name of the output rela
 			
 			if(compare == 0){
 				for (int i = 0; i < projCnt; i++){
-					if (strcmp(attrDescArray[i].relName, attrDesc1.relName) == 0){
+					if (strcmp(attrDescArray[i].relName, attrDesc1.relName) == 0 && !attrDesc1.indexed){
 						memcpy((char*)newRec.data + newRec.length, (char*)outerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
+					} else if (strcmp(attrDescArray[i].relName, attrDesc1.relName) == 0 && attrDesc1.indexed){
+						memcpy((char*)newRec.data + newRec.length, (char*)innerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
 					}
 					else {
-						memcpy((char*)newRec.data + newRec.length, (char*)innerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
+						if(attrDesc1.indexed){
+							memcpy((char*)newRec.data + newRec.length, (char*)outerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
+						} else {
+							memcpy((char*)newRec.data + newRec.length, (char*)innerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
+						}
+						
 					}
 					newRec.length += attrDescArray[i].attrLen;
 				}
@@ -153,7 +160,7 @@ Status Operators::INL(const string& result,           // Name of the output rela
 	free(newRec.data);
 	delete outer;
 	delete inner;
-	delete innerInd;*/
+	delete innerInd;
 	return OK;
 
 }
