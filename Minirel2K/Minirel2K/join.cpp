@@ -33,6 +33,9 @@ Status Operators::Join(const string& result,           // Name of the output rel
 	//turn attr1 and attr2 into AttrDescs
 	attrCat->getInfo(attr1->relName, attr1->attrName, at1);
 	attrCat->getInfo(attr2->relName, attr2->attrName, at2);
+	if(at1.attrType != at2.attrType){
+		return ATTRTYPEMISMATCH;
+	}
 	
 	for(int i = 0; i < projCnt; i++){
 		//get length of record
