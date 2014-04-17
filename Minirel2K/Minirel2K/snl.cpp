@@ -22,12 +22,10 @@ Status Operators::SNL(const string& result,           // Output relation name
 	}
 	
 	HeapFileScan outer = HeapFileScan(attrDesc1.relName, getRes);
-	cerr << attrDesc1.relName << endl;
 	if (getRes != OK){
 		return getRes;
 	}
 	HeapFileScan inner = HeapFileScan(attrDesc2.relName, getRes);
-	cerr << attrDesc2.relName << endl;
 	if (getRes != OK){
 		return getRes;
 	}
@@ -62,6 +60,7 @@ Status Operators::SNL(const string& result,           // Output relation name
 			
 			if((op == LT && compare < 0) || (op == LTE && compare <= 0) || (op == GT && compare > 0) ||
 			   (op == GTE && compare >= 0) || (op == NE && compare != 0)){
+				//project the correct attributes
 				for (int i = 0; i < projCnt; i++){
 					if (strcmp(attrDescArray[i].relName, attrDesc1.relName) == 0){
 						memcpy((char*)newRec.data + newRec.length, (char*)outerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
