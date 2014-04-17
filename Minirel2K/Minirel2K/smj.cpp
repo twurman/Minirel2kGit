@@ -14,7 +14,7 @@ Status Operators::SMJ(const string& result,           // Output relation name
                       const AttrDesc& attrDesc2,      // The left attribute in the join predicate
                       const int reclen)               // The length of a tuple in the result relation
 {
-  cout << "Algorithm: SM Join" << endl;
+	cout << "Algorithm: SM Join" << endl;
 
 	Status getRes = OK;
 	HeapFile res = HeapFile(result, getRes);
@@ -54,8 +54,43 @@ Status Operators::SMJ(const string& result,           // Output relation name
 		return getRes;
 	}
 	
+
+	Record leftRec, rightRec, newRec;
+	newRec.data = malloc(reclen);
+	newRec.length = 0;
+	RID leftRid, rightRid, newRecRID;
+	Status leftIsGood = left.next(leftRec);
+	if(leftIsGood != OK){
+		return leftIsGood;
+	}
+	Status rightIsGood = right.next(rightRec);
+	if(rightIsGood != OK){
+		return rightIsGood;
+	}
+	
+	
+	
+	while(rightIsGood == OK && leftIsGood == OK){
+		newRec.length = 0;
+		int compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
+		if(compare == 0){
+			//project the joined tuple
+			
+			
+		} else if (compare < 0){
+			//scan the next on the left
+		} else {
+			//right is bigger, scan the next right tuple
+		}
+		
+		
+	}
+	
+	
+	
+	
 	
 
-  return OK;
+	return OK;
 }
 
