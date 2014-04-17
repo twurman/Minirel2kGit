@@ -140,7 +140,7 @@ Status Operators::SMJ(const string& result,           // Output relation name
 	
 	
 	
-
+	free(newRec.data);
 	return OK;
 }
 
