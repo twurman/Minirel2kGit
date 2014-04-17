@@ -63,7 +63,7 @@ Status Operators::SNL(const string& result,           // Output relation name
 			if((op == LT && compare < 0) || (op == LTE && compare <= 0) || (op == GT && compare > 0) ||
 			   (op == GTE && compare >= 0) || (op == NE && compare != 0)){
 				for (int i = 0; i < projCnt; i++){
-					if (attrDescArray[i].relName == attrDesc1.relName){
+					if (strcmp(attrDescArray[i].relName, attrDesc1.relName) == 0){
 						memcpy((char*)newRec.data + newRec.length, (char*)outerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
 					}
 					else {

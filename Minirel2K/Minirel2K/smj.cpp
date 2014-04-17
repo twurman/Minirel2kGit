@@ -88,7 +88,7 @@ Status Operators::SMJ(const string& result,           // Output relation name
 			newRec.length = 0;
 			//project the joined tuple
 			for (int i = 0; i < projCnt; i++){
-				if (attrDescArray[i].relName == attrDesc1.relName){
+				if (strcmp(attrDescArray[i].relName, attrDesc1.relName) == 0){
 					memcpy((char*)newRec.data + newRec.length, (char*)leftRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
 				}
 				else {
