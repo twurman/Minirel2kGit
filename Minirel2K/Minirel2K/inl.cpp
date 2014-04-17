@@ -20,7 +20,7 @@ Status Operators::INL(const string& result,           // Name of the output rela
 {
   cout << "Algorithm: Indexed NL Join" << endl;
 
-	Status getRes = OK;
+	/*Status getRes = OK;
 	HeapFile res = HeapFile(result, getRes);
 	if(getRes != OK){
 		return getRes;
@@ -153,7 +153,7 @@ Status Operators::INL(const string& result,           // Name of the output rela
 	free(newRec.data);
 	delete outer;
 	delete inner;
-	delete innerInd;
+	delete innerInd;*/
 	return OK;
 
 }

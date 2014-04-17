@@ -16,13 +16,13 @@ INSERT INTO cherbs(cherbid, name, rating)
 INSERT INTO cherbs(cherbid, name, rating)
 	VALUES (4, 'scarney', 3.2);
 	
-INSERT INTO cherbs(nerbid, name, rating)
+INSERT INTO nerbs(nerbid, name, rating)
 	VALUES (1, 'the real tim wurman', 10.0);
 	
-INSERT INTO cherbs(nerbid, name, rating)
+INSERT INTO nerbs(nerbid, name, rating)
 	VALUES (2, 'the fake tim wurman', 2.4);
 	
-INSERT INTO cherbs(nerbid, name, rating)
+INSERT INTO nerbs(nerbid, name, rating)
 	VALUES (2, 'twurman', 8.9);
 	
 SELECT * FROM cherbs, nerbs WHERE cherbs.cherbid = nerbs.nerbid; -- use SMJ & test right relation smaller than left relation

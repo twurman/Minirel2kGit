@@ -18,7 +18,7 @@ Status Operators::SMJ(const string& result,           // Output relation name
 {
 	cout << "Algorithm: SM Join" << endl;
 
-	Status getRes = OK;
+	/*Status getRes = OK;
 	HeapFile res = HeapFile(result, getRes);
 	if(getRes != OK){
 		return getRes;
@@ -143,7 +143,7 @@ Status Operators::SMJ(const string& result,           // Output relation name
 	
 	
 	
-	free(newRec.data);
+	free(newRec.data);*/
 	return OK;
 }
 
