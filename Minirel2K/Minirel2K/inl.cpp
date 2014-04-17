@@ -112,6 +112,8 @@ Status Operators::INL(const string& result,           // Name of the output rela
 			
 			if(compare == 0){
 				for (int i = 0; i < projCnt; i++){
+					//project either outer rec or inner rec based on if attr1 is indexed
+					//if attr1 is indexed, it is the inner relation
 					if (strcmp(attrDescArray[i].relName, attrDesc1.relName) == 0 && !attrDesc1.indexed){
 						memcpy((char*)newRec.data + newRec.length, (char*)outerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
 					} else if (strcmp(attrDescArray[i].relName, attrDesc1.relName) == 0 && attrDesc1.indexed){
