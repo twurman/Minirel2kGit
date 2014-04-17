@@ -77,10 +77,8 @@ Status Operators::SMJ(const string& result,           // Output relation name
 		int compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
 		if(compare == 0){
 			while(compare == 0 && leftIsGood == OK){
-				compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
 				right.setMark();
 				while(compare == 0 and rightIsGood == OK){
-					compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
 					
 					//project the joined tuple
 					newRec.length = 0;
@@ -96,10 +94,18 @@ Status Operators::SMJ(const string& result,           // Output relation name
 					//insert projected record into result
 					res.insertRecord(newRec, newRecRID);
 					
+					//get next record and compare if next() works
 					rightIsGood = right.next(rightRec);
+					if(rightIsGood == OK){
+						compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
+					}
+					
 				}
 				right.gotoMark();
 				leftIsGood = left.next(leftRec);
+				if(leftIsGood == OK){
+					compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
+				}
 			}
 			
 		} else if (compare < 0){
