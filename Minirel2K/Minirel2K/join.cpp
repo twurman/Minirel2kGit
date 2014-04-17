@@ -39,6 +39,7 @@ Status Operators::Join(const string& result,           // Name of the output rel
 	
 	for(int i = 0; i < projCnt; i++){
 		//get length of record
+		cerr << projNames[i].relName << " : " << projNames[i].attrName << endl;
 		attrCat->getInfo(projNames[i].relName, projNames[i].attrName, temp[i]);
 		recLen += temp[i].attrLen;
 	}
