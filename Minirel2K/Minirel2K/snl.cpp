@@ -22,10 +22,12 @@ Status Operators::SNL(const string& result,           // Output relation name
 	}
 	
 	HeapFileScan outer = HeapFileScan(attrDesc1.relName, getRes);
+	cerr << attrDesc1.relName << endl;
 	if (getRes != OK){
 		return getRes;
 	}
 	HeapFileScan inner = HeapFileScan(attrDesc2.relName, getRes);
+	cerr << attrDesc2.relName << endl;
 	if (getRes != OK){
 		return getRes;
 	}

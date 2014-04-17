@@ -113,9 +113,11 @@ Status Operators::INL(const string& result,           // Name of the output rela
 			if(compare == 0){
 				for (int i = 0; i < projCnt; i++){
 					if (attrDescArray[i].relName == attrDesc1.relName){
+						cerr << "Get attribute from 1" << endl;
 						memcpy((char*)newRec.data + newRec.length, (char*)outerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
 					}
 					else {
+						cerr << "Get attribute from 2" << endl;
 						memcpy((char*)newRec.data + newRec.length, (char*)innerRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
 					}
 					newRec.length += attrDescArray[i].attrLen;
