@@ -16,6 +16,7 @@ INSERT INTO cherbs(cherbid, name, rating)
 INSERT INTO cherbs(cherbid, name, rating)
 	VALUES (4, 'scarney', 3.2);
 	
+-- insert into nerbs
 INSERT INTO nerbs(nerbid, name, rating)
 	VALUES (1, 'the real tim wurman', 10.0);
 	

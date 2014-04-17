@@ -15,7 +15,8 @@ INSERT INTO cherbs(cherbid, name, rating)
 	
 INSERT INTO cherbs(cherbid, name, rating)
 	VALUES (4, 'scarney', 3.2);
-	
+
+-- broken inserts	
 INSERT INTO cherbs(nerbid, name, rating) -- error on input
 	VALUES (1, 'the real tim wurman', 10.0);
 	

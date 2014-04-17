@@ -116,6 +116,7 @@ Status Operators::SMJ(const string& result,           // Output relation name
 			leftIsGood = left.next(nextRec);
 			if(leftIsGood == OK){	//continue, otherwise ENDOFPAGE and done
 				if(matchRec(leftRec, nextRec, attrDesc1, attrDesc1) == 0){
+					rightIsGood = right.next(rightRec);
 					rightIsGood = right.gotoMark();
 					if(rightIsGood != OK){
 						free(newRec.data);
