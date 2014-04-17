@@ -101,7 +101,8 @@ Status Operators::SMJ(const string& result,           // Output relation name
 					}
 					
 				}
-				rightIsGood = right.gotoMark();
+				right.gotoMark();
+				rightIsGood = right.next(rightRec);
 				leftIsGood = left.next(leftRec);
 				if(leftIsGood == OK && rightIsGood == OK){
 					compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
