@@ -72,6 +72,47 @@ Status Operators::SMJ(const string& result,           // Output relation name
 		return rightIsGood;
 	}
 	
+	while(rightIsGood == OK && leftIsGood == OK){
+		//compare the records
+		int compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
+		if(compare == 0){
+			while(compare == 0 && leftIsGood == OK){
+				compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
+				right.setMark();
+				while(compare == 0 and rightIsGood == OK){
+					compare = matchRec(leftRec, rightRec, attrDesc1, attrDesc2);
+					
+					//project the joined tuple
+					newRec.length = 0;
+					for (int i = 0; i < projCnt; i++){
+						if (strcmp(attrDescArray[i].relName, attrDesc1.relName) == 0){
+							memcpy((char*)newRec.data + newRec.length, (char*)leftRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
+						}
+						else {
+							memcpy((char*)newRec.data + newRec.length, (char*)rightRec.data+attrDescArray[i].attrOffset, attrDescArray[i].attrLen);
+						}
+						newRec.length += attrDescArray[i].attrLen;
+					}
+					//insert projected record into result
+					res.insertRecord(newRec, newRecRID);
+					
+					rightIsGood = right.next(rightRec);
+				}
+				right.gotoMark();
+				leftIsGood = left.next(leftRec);
+			}
+			
+		} else if (compare < 0){
+			//scan the next on the left
+			leftIsGood = left.next(leftRec);
+		} else {
+			rightIsGood = right.next(rightRec);
+		}
+		
+		
+	}
+	
+	/*
 	
 	
 	while(rightIsGood == OK && leftIsGood == OK){
@@ -116,7 +157,6 @@ Status Operators::SMJ(const string& result,           // Output relation name
 			leftIsGood = left.next(nextRec);
 			if(leftIsGood == OK){	//continue, otherwise ENDOFPAGE and done
 				if(matchRec(leftRec, nextRec, attrDesc1, attrDesc1) == 0){
-					rightIsGood = right.next(rightRec);
 					rightIsGood = right.gotoMark();
 					if(rightIsGood != OK){
 						free(newRec.data);
@@ -141,7 +181,7 @@ Status Operators::SMJ(const string& result,           // Output relation name
 	}
 	
 	
-	
+	*/
 	
 	
 	free(newRec.data);
