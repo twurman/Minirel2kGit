@@ -125,7 +125,9 @@ Status Operators::SMJ(const string& result,           // Output relation name
 				
 				left2_good = left.next(leftRec2);
 			}
+			
 			/* output further tuples that match with q */
+			right2_good = right.next(rightRec2);
 			while (right2_good == OK && matchRec(leftRec, rightRec2, attrDesc1, attrDesc2) == 0){
 				/* left U right2 projected into result record */
 				newRec.length = 0;
