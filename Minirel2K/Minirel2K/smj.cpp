@@ -122,7 +122,8 @@ Status Operators::SMJ(const string& result,           // Output relation name
 						return rightIsGood;
 					}
 				}
-				leftRec = nextRec;
+				leftRec.data = nextRec.data;
+				leftRec.length = nextRec.length;
 			}
 	
 		} else {
