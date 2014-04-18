@@ -36,7 +36,7 @@ SELECT * FROM gdis WHERE gdis.gid > 2;
 SELECT gdis.name, gdis.occupation FROM gdis WHERE gdis.occupation = 'blue heron';
 
 -- smj joins
-SELECT * FROM doggs, gdis WHERE doggs.occupation = gdis.occupation
+SELECT * FROM doggs, gdis WHERE doggs.occupation = gdis.occupation;
 
 SELECT gdis.name, doggs.real_name, gdis.occupation, doggs.occupation FROM gdis, doggs WHERE gdis.gid = doggs.did;
 
@@ -44,7 +44,7 @@ SELECT gdis.name, doggs.real_name, gdis.occupation, doggs.occupation FROM gdis, 
 CREATE INDEX gdis(gid);
 CREATE INDEX doggs(did);
 
-SELECT * FROM doggs, gdis WHERE doggs.occupation = gdis.occupation
+SELECT * FROM doggs, gdis WHERE doggs.occupation = gdis.occupation;
 
 SELECT gdis.name, doggs.real_name, gdis.occupation, doggs.occupation FROM gdis, doggs WHERE gdis.gid = doggs.did;
 
@@ -83,17 +83,17 @@ CREATE TABLE redTeam(id integer, red double);
 CREATE TABLE blueTeam(id integer, blue double);
 
 INSERT INTO redTeam(id, red)
-	VALUES(2,4);
+	VALUES(2,4.0);
 INSERT INTO redTeam(id, red)
-	VALUES(2,5);
+	VALUES(2,5.2);
 INSERT INTO redTeam(id, red)
-	VALUES(3,5);
+	VALUES(3,5.8);
 INSERT INTO blueTeam(id, blue)
-	VALUES(1,3);
+	VALUES(1,3.2);
 INSERT INTO blueTeam(id, blue)
-	VALUES(1,4);
+	VALUES(1,4.4);
 INSERT INTO blueTeam(id, blue)
-	VALUES(3,3);
+	VALUES(3,3.9);
 
 SELECT blue.blueTeam, red.blue team from blueTeam, redTeam where blueTeam.id = redTeam.id;
 
