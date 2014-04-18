@@ -18,7 +18,6 @@ Status Updates::Insert(const string& relation,      // Name of the relation
                        const int attrCnt,           // Number of attributes specified in INSERT statement
                        const attrInfo attrList[])   // Value of attributes specified in INSERT statement
 {
-    /* Your solution goes here */
 	AttrDesc *aList;
 	int aCount;
 	bool attrInRelation = false;
@@ -42,9 +41,24 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	newRecord.data = malloc(recSize);
 	newRecord.length = recSize;
 	
-	
 	for(int i = 0; i < aCount; i++){
 		attrInRelation = false;
+		AttrDesc at;
+		Status inRelation = attrCat->getInfo(relation, attrList[i].attrName, at);
+		if(inRelation != OK){
+			return inRelation;
+		}
+		if(attrList[i].attrType != at.attrType){
+			free(newRecord.data);
+			newRecord.data = NULL;
+			return ATTRTYPEMISMATCH;
+		}
+		if(attrList[i].attrValue == NULL){
+			
+		}
+		
+		
+		
 		//for loop again - check if attribute is in relation
 		for(int j = 0; j < attrCnt; j++){
 			if(strcmp(attrList[j].attrName, (aList+i)->attrName) == 0){
