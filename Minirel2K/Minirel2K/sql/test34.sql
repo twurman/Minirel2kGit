@@ -72,7 +72,7 @@ SELECT * FROM gdis, doggs WHERE doggs.did > gdis.gid;
 SELECT * FROM gdis, doggs WHERE doggs.did >= gdis.gid;
 
 -- should be cross product minus when did == gid
-SELECT * FROM gdis, doggs WHERE doggs.did != gdis.gid;
+SELECT * FROM gdis, doggs WHERE doggs.did <> gdis.gid;
 
 
 DROP TABLE gdis;
@@ -95,7 +95,7 @@ INSERT INTO blueTeam(id, blue)
 INSERT INTO blueTeam(id, blue)
 	VALUES(3,3.9);
 
-SELECT blue.blueTeam, red.blue team from blueTeam, redTeam where blueTeam.id = redTeam.id;
+SELECT blueTeam.blue, redTeam.red from blueTeam, redTeam where blueTeam.id = redTeam.id;
 
 
 DROP TABLE redTeam;
