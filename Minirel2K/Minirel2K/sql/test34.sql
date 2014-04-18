@@ -60,6 +60,7 @@ SELECT * FROM doggs, gdis WHERE gdis.occupation = doggs.occupation;
 
 -- index on did, second attribute
 SELECT gdis.name, doggs.real_name, gdis.occupation, doggs.occupation FROM gdis, doggs WHERE gdis.gid = doggs.did;
+SELECT * FROM gdis, doggs WHERE gdis.gid = doggs.did;
 
 -- ****************************************************************************
 -- index select
