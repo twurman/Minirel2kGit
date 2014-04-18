@@ -44,23 +44,30 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 	for(int i = 0; i < aCount; i++){
 		attrInRelation = false;
 		AttrDesc at;
+		//check if attribute is in relation
 		Status inRelation = attrCat->getInfo(relation, attrList[i].attrName, at);
 		if(inRelation != OK){
 			free(newRecord.data);
 			newRecord.data = NULL;
 			return inRelation;
 		}
+		//check that attribute is same type
 		if(attrList[i].attrType != at.attrType){
 			free(newRecord.data);
 			newRecord.data = NULL;
 			return ATTRTYPEMISMATCH;
 		}
+		//check that the value is not null
 		if(attrList[i].attrValue == NULL){
 			free(newRecord.data);
 			newRecord.data = NULL;
 			return ATTRNOTFOUND;
 		}
+		
+		//all is good, add the value to the data at the correct offset from the catalog
 		memcpy((char*)newRecord.data + at.attrOffset, attrList[i].attrValue, at.attrLen);
+		
+		//if indexed, get the index object and store in the array of index pointers
 		if(at.indexed){
 			Status checkIndex = OK;
 			indices[numKeys] = new Index(relation,
@@ -77,59 +84,6 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 
 		}
 		
-		
-		/*
-		
-		//for loop again - check if attribute is in relation
-		for(int j = 0; j < attrCnt; j++){
-			if(strcmp(attrList[j].attrName, (aList+i)->attrName) == 0){
-				attrInRelation = true;
-				//check if attribute is same type
-				if(attrList[j].attrType != (aList+i)->attrType){
-					free(newRecord.data);
-					newRecord.data = NULL;
-					return ATTRTYPEMISMATCH;
-				}
-				//check that aList->attrLen >= attrList->attrLen
-				if(attrList[j].attrLen > (aList+i)->attrLen){
-					free(newRecord.data);
-					newRecord.data = NULL;
-					return ATTRTOOLONG;
-				}
-				//check that value is not null -- nullptr C++11?
-				if(attrList[j].attrValue == NULL){
-					free(newRecord.data);
-					newRecord.data = NULL;
-					return ATTRNOTFOUND;
-				}
-				//all is good, add to record
-				memcpy((char*)newRecord.data + (aList+i)->attrOffset, attrList[j].attrValue, (aList+i)->attrLen);
-				
-				
-				if((aList+i)->indexed){
-					Status checkIndex = OK;
-					indices[numKeys] = new Index(relation,
-												 (aList+i)->attrOffset,
-												 (aList+i)->attrLen,
-												 (Datatype)(aList+i)->attrType,
-												 NONUNIQUE,
-												 checkIndex);
-					keyNums[numKeys++] = j;
-					
-					if(checkIndex != OK){
-						return checkIndex;
-					}
-				}
-				
-				
-			}
-		}
-		if(!attrInRelation){
-			free(newRecord.data);
-			newRecord.data = NULL;
-			return ATTRNOTFOUND;
-		}*/
-		
 	}
 	
 	//insert record into db & into catalog
@@ -144,7 +98,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		free(newRecord.data);
 		return heapInsert;
 	}
-	//add index for all indexed elements
+	//add entry on index for all indexed elements
 	for(int i = 0; i < numKeys; i++){
 		indices[i]->insertEntry(attrList[keyNums[i]].attrValue, newRecRID);
 		delete indices[i];
