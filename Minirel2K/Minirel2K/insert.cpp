@@ -46,6 +46,8 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 		AttrDesc at;
 		Status inRelation = attrCat->getInfo(relation, attrList[i].attrName, at);
 		if(inRelation != OK){
+			free(newRecord.data);
+			newRecord.data = NULL;
 			return inRelation;
 		}
 		if(attrList[i].attrType != at.attrType){
@@ -54,10 +56,29 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 			return ATTRTYPEMISMATCH;
 		}
 		if(attrList[i].attrValue == NULL){
+			free(newRecord.data);
+			newRecord.data = NULL;
+			return ATTRNOTFOUND;
+		}
+		memcpy((char*)newRecord.data + at.attrOffset, attrList[i].attrValue, at.attrLen);
+		if(at.indexed){
+			Status checkIndex = OK;
+			indices[numKeys] = new Index(relation,
+										 at.attrOffset,
+										 at.attrLen,
+										 (Datatype)at.attrType,
+										 NONUNIQUE,
+										 checkIndex);
+			keyNums[numKeys++] = i;
 			
+			if(checkIndex != OK){
+				return checkIndex;
+			}
+
 		}
 		
 		
+		/*
 		
 		//for loop again - check if attribute is in relation
 		for(int j = 0; j < attrCnt; j++){
@@ -107,7 +128,7 @@ Status Updates::Insert(const string& relation,      // Name of the relation
 			free(newRecord.data);
 			newRecord.data = NULL;
 			return ATTRNOTFOUND;
-		}
+		}*/
 		
 	}
 	
